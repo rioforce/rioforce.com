@@ -1,4 +1,4 @@
-* { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: border-box; }
 
 html {
   min-width: 320px;
@@ -51,7 +51,7 @@ a img {
 /*------IMG-STYLES------*/
 
 .container a img {
-  
+
 border: none !important;
 
 }
@@ -135,7 +135,7 @@ a:hover .img-fullwidth {
   padding-bottom: 56.25%;
   padding-top: 30px; height: 0; overflow: hidden;
 }
- 
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -179,12 +179,27 @@ a:hover .img-fullwidth {
 /*  z-index: -1;*/
 }
 
+.navigation {
+/*  position: relative;*/
+/*  visibility: hidden;*/
+/*  background-color: rgba(0, 0, 0, 0.7);*/
+  transition: background-color 0.25s linear;
+}
+
+.navigation.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
 .navigation ul {
   list-style: none;
-/*  float: right;*/
-/*
   margin: 0;
   padding: 0;
+/*  float: right;*/
+/*
   padding-top: 2em;
   padding-right: 3em;
 */
@@ -214,7 +229,7 @@ a:hover .img-fullwidth {
 
 /*------HOMEPAGE------*/
 
-video.fullscreen { 
+video.fullscreen {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -234,13 +249,15 @@ video.fullscreen {
   background-size: cover;
   padding: 12% 0 12%;
   text-transform: uppercase;
-}
 
-#header-content-image {
   text-align: center;
   color: white;
   text-shadow: 0 0 1em rgba(0, 0, 0, 0.55);
   cursor: default;
+}
+
+#header-content-image.fixed {
+  margin-bottom: 4em;
 }
 
 #header-content-image h2 {
@@ -442,7 +459,7 @@ video.fullscreen {
 }
 
 #email-form input {
-  
+
 }
 
 /*------QUERIES------*/
@@ -478,7 +495,7 @@ video.fullscreen {
     font-size: 3.2em;
     margin-top: 1em;
   }
-  
+
   #welcome-header {
     margin-top: 1.3em;
     font-size: 4em;

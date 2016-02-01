@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../lib/lightbox.min.css">
+<!--  <link rel="stylesheet" href="../lib/lightbox.min.css">-->
 </head>
 
 <body>
@@ -17,12 +17,12 @@
     <div class="content">
 
       <!--BIG PICTURE-->
+      <span id="home"></span>
       <div id="header-content-image">
         <video class="fullscreen" poster="images/site/Test_0045.jpg" loop autoplay>
-          <source src="images/site/site-reel.ogv" type='video/ogg; codecs="theora, vorbis"'/>
-          <source src="images/site/site-reel.webm" type='video/webm' />
-          <source src="images/site/site-reel.mp4" type="video/mp4" />
-</video>
+          <source src="images/site/site-reel.mp4" type="video/mp4">
+          <source src="images/site/site-reel.ogv" type="video/ogg">
+          <source src="images/site/site-reel.webm" type="video/webm">
         </video>
         <div id="header-text">
         <h1>Benjamin Ely</h1>
@@ -30,7 +30,7 @@
         </div>
         <div class="navigation">
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li class="bullet">&#8226;</li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li class="bullet">&#8226;</li>
@@ -109,5 +109,6 @@
     </div>
   </div>
   <!--<script src="lib/lightbox.min.js"></script>-->
+  <script src="script.js"></script>
 </body>
 </html>
