@@ -3,8 +3,8 @@
   
   var Qnav = document.querySelector(".navigation"),
       QheaderContentImage = document.querySelector("#header-content-image");
+
   function toggleFixedNav() {
-    console.log(window.pageYOffset);
     if (window.pageYOffset >= 298) {
       Qnav.classList.add("fixed");
       QheaderContentImage.classList.add("fixed");
