@@ -388,9 +388,9 @@ video.fullscreen {
 .film-detail.visible { max-height: 120em; }
 
 .film-detail > .video-container {
-  margin-right: 4em;
+  margin-right: 2em;
   padding-top: 1.5em;
-  padding-bottom: 1.5em;
+/*  padding-bottom: 1.5em;*/
 }
 
 .film-detail h1 { margin: 0; }
