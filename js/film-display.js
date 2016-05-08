@@ -92,7 +92,7 @@
     }
 
     // Fetch the film's page
-    microAjax("_pages/" + filmPage + ".html", {
+    microAjax("pages/" + filmPage + ".html", {
       method: "GET",
       ajaxMethod: "xhr",
       success: function(data) {
