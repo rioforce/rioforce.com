@@ -1,26 +1,11 @@
+/*
+ * Created 2015-2016 Caleb Ely
+ * <http://CodeTriangle.me>
+ */
+
+
 (function() {
   "use strict";
-  // Pollyfill the Element.matches method
-  // https://davidwalsh.name/element-matches-selector#comment-504324
-  if (!Element.prototype.matches) {
-    var ep = Element.prototype;
-
-    // Chrome <34, SF<7.1, iOS<8
-    if (ep.webkitMatchesSelector) {
-      ep.matches = ep.webkitMatchesSelector;
-    }
-
-    // IE9/10/11 & Edge
-    if (ep.msMatchesSelector) {
-      ep.matches = ep.msMatchesSelector;
-    }
-
-    // FF<34
-    if (ep.mozMatchesSelector) {
-      ep.matches = ep.mozMatchesSelector;
-    }
-  }
-
   function findParent(ele, _class) {
     // The desired element was not found on the page
     if (ele === null) {
