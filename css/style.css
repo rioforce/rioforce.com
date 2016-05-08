@@ -431,6 +431,11 @@ video.fullscreen {
   margin-top: 1.5em;
 }
 
+.details .year {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
 .images a:hover,
 .images a:focus,
 .images a:active { border-bottom: none; }
