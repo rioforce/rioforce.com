@@ -1,5 +1,6 @@
 *.php
 PROJECTS/
+images/portfolio/banners/
 
 #################
 ## Eclipse
