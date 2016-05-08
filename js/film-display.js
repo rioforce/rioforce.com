@@ -122,8 +122,13 @@
       return false;
     }
 
-    // We have a film, load it
+    // Abort if this is not a film
     var qFilm = document.querySelector("#" + filmPage);
+    if (!qFilm.classList.contains("film")) {
+      return false;
+    }
+
+    // We have a film, load it
     __loadPage(qFilm);
   }
 
