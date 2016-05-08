@@ -303,6 +303,7 @@ video.fullscreen {
   letter-spacing: 5px;
   background-color: rgba(0, 0, 0, 0.95);
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 #reel-header a {
@@ -351,6 +352,94 @@ video.fullscreen {
 
 .port-image img:hover {
   opacity: 0.9;
+}
+
+/*------PORTFOLIO------*/
+
+.film-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+
+  /*background-color: #0A0A0A;*/
+  /*background-color: #272525;*/
+  background-color: #373740;
+}
+
+.film-row > .film { cursor: pointer; }
+
+.film:hover,
+.film:focus,
+.film:active,
+.film-detail img:hover,
+.film-detail img:focus,
+.film-detail img:active {
+  opacity: 0.9;
+}
+
+.film > .title {
+  text-align: center;
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.55);
+  color: #fff;
+}
+
+.film > img {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.55);
+}
+
+.film-detail {
+  max-height: 0;
+  overflow: hidden;
+  padding-right: 2em;
+  padding-left: 2em;
+
+  background-color: #fff;
+  display: flex;
+
+  transition: max-height 0.3s ease;
+}
+.film-detail.visible { max-height: 120em; }
+
+.film-detail > .video-container {
+  margin-right: 4em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.film-detail h1 { margin: 0; }
+
+.film-detail a {
+  font-size: 1.1em;
+  color: blue;
+}
+
+.film-detail a:hover,
+.film-detail a:focus,
+.film-detail a:active {
+  border-bottom: 2px inset #373740;
+}
+
+.film-detail > .details {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.details > .images {
+  margin-top: 1.5em;
+}
+
+.images a:hover,
+.images a:focus,
+.images a:active { border-bottom: none; }
+
+.images img {
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
 }
 
 /*------CONTACT------*/
