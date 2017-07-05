@@ -253,7 +253,7 @@ a:hover .img-fullwidth {
 /*------HOMEPAGE HEADER------*/
 
 #header-home {
-  /*  background-image: url(../images/site/Test_0045.jpg);*/
+  /*  background-image: url(../images/Test_0045.jpg);*/
   background-attachment: fixed;
   background-size: cover;
   /*  padding: 12% 0 12%;*/
@@ -433,7 +433,7 @@ video.fullscreen {
 
 .contact {
   /*  background-color: #151517;*/
-  background-image: url(../images/site/contact-bg.jpg);
+  background-image: url(../images/contact-bg.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
