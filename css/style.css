@@ -30,7 +30,6 @@ a {
 
 .content a {
   border-bottom: 1px inset white;
-  /*  color: blue;*/
 }
 
 .enlightenment a {
@@ -44,9 +43,6 @@ a img {
 
 .emphasis {
   font-size: 1.2em;
-  /*  font-weight: 700;*/
-  /*  color: #feffda;*/
-  /*  letter-spacing: 1px;*/
   font-family: "Montserrat", sans-serif;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.34);
 }
@@ -139,19 +135,15 @@ a:hover .img-fullwidth {
 .nav-container {
   position: relative;
   width: 100%;
-  /*  padding-left: 2em;*/
-  /*  padding-top: 1em;*/
 }
 
 .name-header {
   list-style: none;
   float: left;
   display: inline-block;
-  /*  padding-left: 2em;*/
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5em;
-  /*  padding: 1em;*/
 }
 
 #logo {
@@ -159,14 +151,9 @@ a:hover .img-fullwidth {
   margin: 2em;
   position: relative;
   padding-left: 2em;
-  /*  z-index: -1;*/
 }
 
 .navigation {
-  /*  position: relative;*/
-  /*  visibility: hidden;*/
-  /*  background-color: rgba(0, 0, 0, 0.7);*/
-  /*  transition: background-color 0.25s linear;*/
   position: fixed;
   width: 100%;
   top: 0%;
@@ -256,9 +243,7 @@ a:hover .img-fullwidth {
   /*  background-image: url(../images/Test_0045.jpg);*/
   background-attachment: fixed;
   background-size: cover;
-  /*  padding: 12% 0 12%;*/
   margin-bottom: 4em;
-  /*  text-transform: uppercase;*/
   text-align: center;
   color: white;
   margin-top: 4em;
@@ -281,7 +266,6 @@ video.fullscreen {
   /*background: transparent url("http://bricksinmotion.com/movie/wp-content/uploads/2016/01/header_bricks.jpg") no-repeat fixed 50% 0px; background-attachment: fixed;*/
   background-size: cover;
   padding: 12% 0 12%;
-  /*  text-transform: uppercase;*/
   text-align: center;
   color: white;
   text-shadow: 0 0 1em rgba(0, 0, 0, 0.55);
@@ -316,7 +300,6 @@ video.fullscreen {
 
 .film-library {
   background-color: rgba(0, 49, 80, 0.89);
-/*  padding-bottom: 0.5em;*/
 }
 
 .film-row,
@@ -352,8 +335,7 @@ video.fullscreen {
 }
 
 #video-lib-buttons .btn.active .title:after {
-  color: #black;
-/*  border-bottom: 2px solid white;*/
+  color: black;
   content: '';
   display: block;
   margin: auto;
@@ -377,7 +359,6 @@ video.fullscreen {
 
 .film .title {
   text-align: center;
-/*  text-shadow: 0 0 1em rgba(0, 0, 0, 0.55);*/
   color: white;
 }
 
@@ -433,7 +414,6 @@ video.fullscreen {
 }
 
 .contact {
-  /*  background-color: #151517;*/
   background-image: url(../images/contact-bg.jpg);
   background-size: cover;
   background-position: center;
@@ -456,7 +436,6 @@ video.fullscreen {
   margin-right: auto;
   color: white;
   list-style: square;
-  /*  line-height: 2;*/
 }
 
 .contact li {
@@ -480,25 +459,6 @@ video.fullscreen {
 .socialism-large a:hover {
   color: rgba(222, 222, 222, 0.77);
 }
-
-#email-form-wrapper {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#email-form label {
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-weight: 700;
-}
-
-#email-form label span {
-  color: red;
-}
-
-#email-form input {}
-
 
 /*------FOOTER------*/
 
@@ -536,11 +496,9 @@ video.fullscreen {
 }
 
 #credit {
-  /*  position: relative;*/
   float: right;
   color: #373740;
   margin: 0;
-/*  margin-right: 1em;*/
   padding: 0;
   cursor: default;
   padding-top: 0.6em;
