@@ -1,0 +1,639 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #373740;
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+}
+
+.content p {
+  line-height: 1.6;
+  /*  text-align: justify;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.content a {
+  border-bottom: 1px inset white;
+  /*  color: blue;*/
+}
+
+.enlightenment a {
+  color: black;
+  border-bottom: 1px inset black;
+}
+
+a img {
+  border: none;
+}
+
+.emphasis {
+  font-size: 1.2em;
+  /*  font-weight: 700;*/
+  /*  color: #feffda;*/
+  /*  letter-spacing: 1px;*/
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.34);
+}
+
+
+/*------IMG-STYLES------*/
+
+.container a img { border: none !important; }
+
+.no-underline { border: none !important; }
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumb {
+  width: 10em;
+  height: auto;
+  padding: 1em;
+  display: block;
+}
+
+.img-small {
+  width: 15em;
+  height: auto;
+  padding: 1em;
+}
+
+.img-medium {
+  width: 25em;
+  height: auto;
+  padding: 1em;
+}
+
+.img-large {
+  width: 50em;
+  height: auto;
+  padding: 1em;
+}
+
+.img-fullwidth {
+  width: 100%;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: block;
+}
+
+.img-left {
+  float: left;
+}
+
+.img-right {
+  float: right;
+}
+
+.img-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+a:hover .img-thumb,
+a:hover .img-small,
+a:hover .img-medium,
+a:hover .img-large,
+a:hover .img-fullwidth {
+  opacity: 0.9;
+}
+
+.img-caption {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-caption h4 {
+  margin: 0 0 1em 1em;
+  cursor: default;
+}
+
+.lightbox-wrapper .img-responsive {
+  width: 75%;
+  height: auto;
+}
+
+
+/*------NAVIGATION------*/
+
+.nav-container {
+  position: relative;
+  width: 100%;
+  /*  padding-left: 2em;*/
+  /*  padding-top: 1em;*/
+}
+
+.name-header {
+  list-style: none;
+  float: left;
+  display: inline-block;
+  /*  padding-left: 2em;*/
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  /*  padding: 1em;*/
+}
+
+#logo {
+  float: left;
+  margin: 2em;
+  position: relative;
+  padding-left: 2em;
+  /*  z-index: -1;*/
+}
+
+.navigation {
+  /*  position: relative;*/
+  /*  visibility: hidden;*/
+  /*  background-color: rgba(0, 0, 0, 0.7);*/
+  /*  transition: background-color 0.25s linear;*/
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  background-color: white;
+  color: black;
+  z-index: 2;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  cursor: default;
+}
+
+.navigation li {
+  display: inline-block;
+  padding: 1em;
+}
+
+.nav-pages {
+  float: left;
+  padding-left: 1em;
+}
+
+.nav-pages .bullet {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nav-pages a:hover,
+.nav-pages a:focus,
+.nav-pages a:active {
+  border-bottom: 1px inset #000;
+}
+
+.nav-pages a {
+  text-decoration: none;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.nav-social {
+  float: right;
+  padding-right: 1em;
+}
+
+.nav-social a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+.nav-social .fa-youtube-play:hover,
+.nav-social .fa-youtube-play:focus,
+.nav-social .fa-youtube-play:active {
+  color: #E62117;
+}
+
+.nav-social .fa-twitter:hover,
+.nav-social .fa-twitter:focus,
+.nav-social .fa-twitter:active {
+  color: #1da1f2;
+}
+
+.nav-social .fa-instagram:hover,
+.nav-social .fa-instagram:focus,
+.nav-social .fa-instagram:active {
+  background-image: linear-gradient(270deg, #BC32A4 0%, #E03768 50%, #F67C33 100%);
+  border-radius: 35%;
+  padding: 0px 1.5px 0px 1.5px;
+  color: white;
+  margin: 0px -1.5px 0 -1.5px;
+}
+
+.nav-social .fa-envelope-o:hover,
+.nav-social .fa-envelope-o:focus,
+.nav-social .fa-envelope-o:active {
+  color: #e2f414;
+}
+
+
+/*------HOMEPAGE HEADER------*/
+
+#header-home {
+  /*  background-image: url(../images/site/Test_0045.jpg);*/
+  background-attachment: fixed;
+  background-size: cover;
+  /*  padding: 12% 0 12%;*/
+  margin-bottom: 4em;
+  /*  text-transform: uppercase;*/
+  text-align: center;
+  color: white;
+  margin-top: 4em;
+}
+
+video.fullscreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+#header-content-image {
+  /*  background: transparent;*/
+  /*background: transparent url("http://bricksinmotion.com/movie/wp-content/uploads/2016/01/header_bricks.jpg") no-repeat fixed 50% 0px; background-attachment: fixed;*/
+  background-size: cover;
+  padding: 12% 0 12%;
+  /*  text-transform: uppercase;*/
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.55);
+  cursor: default;
+}
+
+#header-content-image.fixed {
+  margin-bottom: 4em;
+}
+
+#header-content-image h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  cursor: default;
+  margin: 0;
+  padding-top: 0.2em;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#header-content-image h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.large-headers {
+  font-size: 8em;
+  margin: 0;
+  padding: 0;
+}
+
+/*------PORTFOLIO------*/
+
+.film-library {
+  background-color: rgba(0, 49, 80, 0.89);
+/*  padding-bottom: 0.5em;*/
+}
+
+.film-row,
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.film-row {
+  padding-bottom: 0.75em;
+}
+.btn-row {
+  padding-bottom: 2em;
+}
+
+.film-row > .film,
+.btn-row > .btn {
+  text-align: center;
+  cursor: pointer;
+}
+
+#video-lib-buttons {
+  background-color: #fbff61;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 2em;
+}
+
+#video-lib-buttons .btn .title {
+  color: #003150;
+}
+
+#video-lib-buttons .btn.active .title:after {
+  color: #black;
+/*  border-bottom: 2px solid white;*/
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background: #003150;
+}
+
+.btn {
+  width: 18.75em;
+}
+
+.film:hover,
+.film:focus,
+.film:active,
+.film-detail img:hover,
+.film-detail img:focus,
+.film-detail img:active {
+  opacity: 0.85;
+}
+
+.film .title {
+  text-align: center;
+/*  text-shadow: 0 0 1em rgba(0, 0, 0, 0.55);*/
+  color: white;
+}
+
+.film .title {
+  position: relative;
+  top: -4px;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.film > a,
+.btn > a {
+  border-bottom: none;
+}
+
+.film img {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.55);
+}
+
+.images a:hover,
+.images a:focus,
+.images a:active {
+  border-bottom: none;
+}
+
+.images img {
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+/*------CONTACT------*/
+
+#about h1 {
+  position: relative;
+  float: right;
+  cursor: default;
+}
+
+#about ul {
+  padding-right: 35%;
+  text-shadow: 0 0 5px black;
+}
+
+.contact .large-headers {
+  margin-top: 0.05em;
+}
+
+.contact.socialism a {
+  font-size: 1.5em;
+  color: white;
+}
+
+.contact {
+  /*  background-color: #151517;*/
+  background-image: url(../images/site/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.contact h1 {
+  position: relative;
+  color: rgba(255, 255, 255, 0.27);
+  text-align: left;
+  cursor: default;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact ul {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  list-style: square;
+  /*  line-height: 2;*/
+}
+
+.contact li {
+  margin-bottom: 1em;
+}
+
+.socialism-large {
+  font-size: 5em;
+  text-align: center;
+  cursor: default;
+  padding: 0.2em;
+}
+
+.socialism-large a {
+  border-bottom: none;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  color: white;
+}
+
+.socialism-large a:hover {
+  color: rgba(222, 222, 222, 0.77);
+}
+
+#email-form-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#email-form label {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+#email-form label span {
+  color: red;
+}
+
+#email-form input {}
+
+
+/*------FOOTER------*/
+
+.footer {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 4.1em;
+}
+
+.footer i {
+  font-size: 2em;
+  color: #373740;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.footer i:hover {
+  color: rgba(55, 55, 64, 0.72);
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  cursor: default;
+}
+
+.footer li {
+  display: inline-block;
+  padding: 1em;
+}
+
+#submebutton {
+  padding: 0.5em;
+}
+
+#credit {
+  /*  position: relative;*/
+  float: right;
+  color: #373740;
+  margin: 0;
+/*  margin-right: 1em;*/
+  padding: 0;
+  cursor: default;
+  padding-top: 0.6em;
+  padding-right: 0.5em;
+}
+
+/*------FANCY UNDERLINES------*/
+
+.sliding-middle-out {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+  width: 100%;
+  background: #003150;
+}
+
+
+/*------QUERIES------*/
+
+@media (max-width: 1126px) {
+  #welcome-header {
+    font-size: 7em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 990px) {
+  .large-headers {
+    font-size: 5em;
+  }
+  #welcome-header {
+    text-align: center;
+    font-size: 7em;
+  }
+}
+
+@media (max-width: 830px) {
+  #welcome-header {
+    margin-top: 0.8em;
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 680px) {
+  .large-headers {
+    text-align: center !important;
+    font-size: 3.2em;
+    margin-top: 1em;
+  }
+  #welcome-header {
+    margin-top: 1.3em;
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 534px) {
+  #welcome-header {
+    margin-top: 1em;
+    font-size: 3.2em;
+  }
+}
+
+@media (max-width: 450px) {
+  #header-content-image h1 {
+    font-size: 2.95em;
+  }
+  #header-content-image h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 355px) {
+  .socialism {
+    padding-top: 0.8em;
+  }
+  .footer {
+    text-align: center;
+  }
+  #credit {
+    float: none;
+    margin: 0;
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
