@@ -397,6 +397,7 @@ video.fullscreen {
   background-position: center;
   overflow: hidden;
   height: 40em;
+  text-align: justify;
 }
 
 .contact h1 {
