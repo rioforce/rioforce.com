@@ -29,13 +29,12 @@ a {
 }
 
 .content a {
-  border-bottom: 1px inset white;
-  /*  color: blue;*/
+  border-bottom: 1px solid transparent;
 }
 
 .enlightenment a {
   color: black;
-  border-bottom: 1px inset black;
+  border-bottom-color: black;
 }
 
 a img {
