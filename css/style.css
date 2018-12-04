@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .content p {
@@ -285,7 +285,6 @@ video.fullscreen {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* justify-content: space-evenly; */
 }
 
 .film-row {
@@ -308,23 +307,22 @@ video.fullscreen {
   margin-bottom: 2em;
 }
 
-#video-lib-buttons .btn .title {
+#video-lib-buttons .title {
   color: #003150;
 }
 
 #video-lib-buttons .btn.active .title:after {
-  color: #black;
 /*  border-bottom: 2px solid white;*/
   content: '';
   display: block;
   margin: auto;
   height: 3px;
   width: 100%;
-  background: #003150;
+  background-color: #003150;
 }
 
 .btn {
-  width: 18.75em;
+  width: 17.5em;
 }
 
 .film:hover,
@@ -340,9 +338,7 @@ video.fullscreen {
   text-align: center;
 /*  text-shadow: 0 0 1em rgba(0, 0, 0, 0.55);*/
   color: white;
-}
 
-.film .title {
   position: relative;
   top: -4px;
   font-weight: 300;
@@ -417,7 +413,6 @@ video.fullscreen {
   margin-right: auto;
   color: white;
   list-style: square;
-  /*  line-height: 2;*/
 }
 
 .contact li {
