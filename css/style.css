@@ -266,16 +266,10 @@ video.fullscreen {
   margin: 0;
 }
 
-.large-headers {
-  font-size: 8em;
-  margin: 0;
-  padding: 0;
-}
-
 /*------PORTFOLIO------*/
 
 .film-library {
-  background-color: rgba(33, 122, 168, 0.76);
+  background-color: #efefef;
 /*  padding-bottom: 0.5em;*/
 }
 
@@ -300,14 +294,14 @@ video.fullscreen {
 }
 
 #video-lib-buttons {
-  background-color: #ffffff;
+  background-color: rgb(31, 63, 100);
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 2em;
 }
 
 #video-lib-buttons .title {
-  color: #003150;
+  color: #ffffff;
 }
 
 #video-lib-buttons .btn.active .title:after {
@@ -336,7 +330,7 @@ video.fullscreen {
 .film .title {
   text-align: center;
 /*  text-shadow: 0 0 1em rgba(0, 0, 0, 0.55);*/
-  color: white;
+  color: #000000;
 
   position: relative;
   top: -4px;
@@ -350,7 +344,7 @@ video.fullscreen {
 }
 
 .film img {
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.55);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .images a:hover,
@@ -368,20 +362,22 @@ video.fullscreen {
 
 /*------CONTACT------*/
 
-#about h1 {
+.contact .large-headers {
   position: relative;
   float: right;
   cursor: default;
-}
-
-#about p {
-  padding-right: 35%;
-  text-shadow: 0 0 5px black;
-  color: white;
-}
-
-.contact .large-headers {
   margin-top: 0.05em;
+  padding-right: 10%;
+  font-size: 10em;
+  margin: 0;
+}
+
+.contact p {
+  float: right;
+  padding-left: 30%;
+  padding-right: 10%;
+/*  text-shadow: 0 0 5px black;*/
+  color: white;
 }
 
 .contact.socialism a {
@@ -391,10 +387,12 @@ video.fullscreen {
 
 .contact {
   /*  background-color: #151517;*/
-  background-image: url(../images/contact-bg.jpg);
+  position:relative;
+  background-image: url(../images/about-bg.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  height: 40em;
 }
 
 .contact h1 {
@@ -405,6 +403,13 @@ video.fullscreen {
   max-width: 75%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contact #quote {
+  color: white;
+  font-size: 1.4em;
+  float:right;
+  padding-right: 10%;
 }
 
 .contact ul {
