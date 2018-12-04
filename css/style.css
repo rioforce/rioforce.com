@@ -366,10 +366,6 @@ video.fullscreen {
 
 /*------CONTACT------*/
 
-.contact {
-  border-top: 0.5em solid rgba(255, 255, 255, 0.31);
-}
-
 #lil-rio {
   position: absolute;
   display: inline;
@@ -409,13 +405,14 @@ video.fullscreen {
 }
 
 .contact {
+  border-top: 0.5em solid rgba(255, 255, 255, 0.31);
   /*  background-color: #151517;*/
   position:relative;
   background-image: url(../images/about-bg.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  height: 40em;
+/*  height: ;*/
   text-align: justify;
 }
 
@@ -591,8 +588,19 @@ video.fullscreen {
   }
 }
 
-@media (max-width: 990px) {
-  .large-headers {
-    font-size: 5em;
+@media (max-width: 700px) {
+  #about p {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
   }
-}
+
+  .large-headers {
+    font-size: 4.8em !important;
+  }
+
+  #lil-rio {
+left: 1em;
+    width: 2.8em;
+  }
+
