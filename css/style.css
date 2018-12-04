@@ -42,11 +42,11 @@ a img {
 }
 
 .emphasis {
-  font-size: 1.2em;
+/*  font-size: 1.em;*/
   /*  font-weight: 700;*/
-  /*  color: #feffda;*/
+    color: #fffef2;
   /*  letter-spacing: 1px;*/
-  font-family: "Montserrat", sans-serif;
+/*  font-family: "Montserrat", sans-serif;*/
   border-bottom: 1px dashed rgba(255, 255, 255, 0.34);
 }
 
@@ -362,6 +362,10 @@ video.fullscreen {
 
 /*------CONTACT------*/
 
+#about {
+  font-family: "Montserrat", sans-serif;
+}
+
 .contact .large-headers {
   position: relative;
   float: right;
@@ -406,10 +410,11 @@ video.fullscreen {
 }
 
 .contact #quote {
-  color: white;
+  color: rgba(255, 255, 255, 0.4);
   font-size: 1.4em;
   float:right;
   padding-right: 10%;
+  text-align: right
 }
 
 .contact ul {
