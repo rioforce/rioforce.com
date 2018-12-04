@@ -269,7 +269,9 @@ video.fullscreen {
 /*------PORTFOLIO------*/
 
 .film-library {
-  background-color: #efefef;
+/*  background-color: rgba(6, 16, 44, 0.92);*/
+  background-color: #eef1f4;
+    border-top: 0.5em solid white;
 /*  padding-bottom: 0.5em;*/
 }
 
@@ -294,14 +296,16 @@ video.fullscreen {
 }
 
 #video-lib-buttons {
-  background-color: rgb(31, 63, 100);
+  background-color: rgb(22, 101, 193);
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 2em;
+/*  height: 6em;*/
+  font-size: 1.5em;
 }
 
 #video-lib-buttons .title {
-  color: #ffffff;
+  color: white;
 }
 
 #video-lib-buttons .btn.active .title:after {
@@ -311,7 +315,7 @@ video.fullscreen {
   margin: auto;
   height: 3px;
   width: 100%;
-  background-color: #003150;
+  background-color: white;
 }
 
 .btn {
@@ -361,6 +365,10 @@ video.fullscreen {
 }
 
 /*------CONTACT------*/
+
+.contact {
+  border-top: 0.5em solid rgba(255, 255, 255, 0.31);
+}
 
 #about {
   font-family: "Montserrat", sans-serif;
