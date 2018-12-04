@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Ubuntu", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .content p {
@@ -135,44 +135,16 @@ a:hover .img-fullwidth {
 
 
 /*------NAVIGATION------*/
-
-.nav-container {
-  position: relative;
-  width: 100%;
-  /*  padding-left: 2em;*/
-  /*  padding-top: 1em;*/
-}
-
-.name-header {
-  list-style: none;
-  float: left;
-  display: inline-block;
-  /*  padding-left: 2em;*/
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5em;
-  /*  padding: 1em;*/
-}
-
-#logo {
-  float: left;
-  margin: 2em;
-  position: relative;
-  padding-left: 2em;
-  /*  z-index: -1;*/
-}
-
-.navigation {
-  /*  position: relative;*/
-  /*  visibility: hidden;*/
-  /*  background-color: rgba(0, 0, 0, 0.7);*/
-  /*  transition: background-color 0.25s linear;*/
+nav {
   position: fixed;
   width: 100%;
   top: 0%;
   background-color: white;
   color: black;
   z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation ul {
@@ -187,7 +159,6 @@ a:hover .img-fullwidth {
 }
 
 .nav-pages {
-  float: left;
   padding-left: 1em;
 }
 
@@ -206,12 +177,11 @@ a:hover .img-fullwidth {
   text-decoration: none;
   color: black;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 300;
 }
 
 .nav-social {
-  float: right;
   padding-right: 1em;
 }
 
@@ -481,25 +451,6 @@ video.fullscreen {
   color: rgba(222, 222, 222, 0.77);
 }
 
-#email-form-wrapper {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#email-form label {
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-weight: 700;
-}
-
-#email-form label span {
-  color: red;
-}
-
-#email-form input {}
-
-
 /*------FOOTER------*/
 
 .footer {
@@ -570,28 +521,20 @@ video.fullscreen {
 
 
 /*------QUERIES------*/
-
-@media (max-width: 1126px) {
-  #welcome-header {
-    font-size: 7em;
-    text-align: center;
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .nav-pages { padding-left: 0; }
+  .nav-pages a { font-size: 1.2em; }
 }
+
 
 @media (max-width: 990px) {
   .large-headers {
     font-size: 5em;
-  }
-  #welcome-header {
-    text-align: center;
-    font-size: 7em;
-  }
-}
-
-@media (max-width: 830px) {
-  #welcome-header {
-    margin-top: 0.8em;
-    font-size: 6em;
   }
 }
 
@@ -600,17 +543,6 @@ video.fullscreen {
     text-align: center !important;
     font-size: 3.2em;
     margin-top: 1em;
-  }
-  #welcome-header {
-    margin-top: 1.3em;
-    font-size: 4em;
-  }
-}
-
-@media (max-width: 534px) {
-  #welcome-header {
-    margin-top: 1em;
-    font-size: 3.2em;
   }
 }
 
