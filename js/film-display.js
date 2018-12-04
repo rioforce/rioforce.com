@@ -8,7 +8,8 @@
   "use strict";
   var CONSTANTS = Object.freeze({
     API_KEY: "AIzaSyAnp7CY0EJ0o0elDINC7WmROmJiY2T-Clw",
-    NUM_OF_VIDEOS: 12 //CHANGE THIS MULTIPLES FOUR TO ADD ROW OTHER ETC
+    FILMS_IN_ROW: 2,
+    NUM_OF_VIDEOS: 4 //CHANGE THIS TO ADD ROW OTHER ETC
   });
 
   function _findParent(ele, _class) {
@@ -36,7 +37,7 @@
         qWrapper = document.querySelector(".film-row-wrapper");
 
     // If there are films already visible, remove them
-    if (qWrapper.children.length > 1) {
+    if (qWrapper.children.length >= 1) {
       while (qWrapper.firstChild) {
         qWrapper.removeChild(qWrapper.firstChild);
       }
@@ -44,8 +45,8 @@
 
     // Add each film to the page
     films.forEach(function(v, i) {
-      // Only four films to a row
-      if (i % 4 === 0) {
+      // Only x films to a row
+      if (i % CONSTANTS.FILMS_IN_ROW === 0) {
         div = document.createElement("div");
         div.classList.add("film-row");
         qWrapper.insertAdjacentElement("beforeend", div);
@@ -66,7 +67,7 @@
       data.items.forEach(function(v, i) {
         v = v.snippet;
         var film = new Film(i, v.title, v.resourceId.videoId,
-                            v.playlistId, v.thumbnails.medium);
+                            v.playlistId, v.thumbnails.maxres);
         film.compile(html);
         films.push(film);
       });
@@ -108,12 +109,12 @@
   }
 
   // Duplicate this and a thing in the HTML to add another section
-  document.querySelector("#btn-featured").addEventListener("click", loadVideos);
-  document.querySelector("#btn-latest").addEventListener("click", loadVideos);
+  document.querySelector("#btn-shortfilms").addEventListener("click", loadVideos);
+  document.querySelector("#btn-client").addEventListener("click", loadVideos);
   document.querySelector("#btn-tut-bts").addEventListener("click", loadVideos);
 
   // Load the featured playlist on page load
   document.addEventListener("DOMContentLoaded", function(event) {
-    document.querySelector("#btn-featured").click();
+    document.querySelector("#btn-shortfilms").click();
   });
 }());
