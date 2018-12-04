@@ -533,7 +533,7 @@ video.fullscreen {
 }
 .sliding-middle-out:hover:after {
   width: 100%;
-  background: #003150;
+  background: white;
 }
 
 
