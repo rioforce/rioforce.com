@@ -42,14 +42,13 @@ a img {
 }
 
 .emphasis {
-/*  font-size: 1.em;*/
-  /*  font-weight: 700;*/
-    color: #fffef2;
-  /*  letter-spacing: 1px;*/
-/*  font-family: "Montserrat", sans-serif;*/
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.34);
+  color: #fffef2;
 }
 
+#about a {
+  color: #fffef2;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.34);
+}
 
 /*------IMG-STYLES------*/
 
