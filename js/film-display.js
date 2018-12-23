@@ -6,11 +6,11 @@
 
 (function() {
   "use strict";
-  var CONSTANTS = Object.freeze({
+  var CONSTANTS = {
     API_KEY: "AIzaSyAnp7CY0EJ0o0elDINC7WmROmJiY2T-Clw",
-    FILMS_IN_ROW: 2,
-    NUM_OF_VIDEOS: 4 //CHANGE THIS TO ADD ROW OTHER ETC
-  });
+    FILMS_IN_ROW: 3,
+    NUM_OF_VIDEOS: 6 //CHANGE THIS TO ADD ROW OTHER ETC
+  };
 
   function _findParent(ele, _class) {
     // The desired element was not found on the page
