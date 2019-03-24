@@ -109,8 +109,8 @@
   }
 
   // Duplicate this and a thing in the HTML to add another section
+    document.querySelector("#btn-client").addEventListener("click", loadVideos);
   document.querySelector("#btn-shortfilms").addEventListener("click", loadVideos);
-  document.querySelector("#btn-client").addEventListener("click", loadVideos);
   document.querySelector("#btn-tut-bts").addEventListener("click", loadVideos);
 
   // Load the featured playlist on page load
