@@ -61,13 +61,18 @@
     fetch("templates/film.html")
     .then(function(r) { return r.text(); })
     .then(function(html) {
-
       // Generate a thumbnail for each video
       var films = [];
       data.items.forEach(function(v, i) {
         v = v.snippet;
+
+        // If a maxres thumbnail is not available,
+        // fallback to a medium-sized image (medium because they are letterboxed
+        // and keep the wide-screen aspect ratio)
+        var filmThumbnail = v.thumbnails.maxres || v.thumbnails.medium;
+
         var film = new Film(i, v.title, v.resourceId.videoId,
-                            v.playlistId, v.thumbnails.maxres);
+                            v.playlistId, filmThumbnail);
         film.compile(html);
         films.push(film);
       });
@@ -109,7 +114,7 @@
   }
 
   // Duplicate this and a thing in the HTML to add another section
-    document.querySelector("#btn-client").addEventListener("click", loadVideos);
+  document.querySelector("#btn-client").addEventListener("click", loadVideos);
   document.querySelector("#btn-shortfilms").addEventListener("click", loadVideos);
   document.querySelector("#btn-tut-bts").addEventListener("click", loadVideos);
 
