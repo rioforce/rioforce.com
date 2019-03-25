@@ -295,7 +295,7 @@ video.fullscreen {
 }
 
 #video-lib-buttons {
-  background-color: rgb(22, 101, 193);
+  background-color: #1665c1;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 2em;
@@ -361,6 +361,72 @@ video.fullscreen {
   margin-right: 0.5em;
   box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.7);
   cursor: pointer;
+}
+
+.lower-film-library-banner {
+  width: 100%;
+  background-color: #1665c1;
+/*  height: 2em;*/
+  text-align: center;
+  padding: 0.5em 0 0.5em 0;
+  font-size: 1.5em;
+}
+
+.lower-film-library-banner a {
+  border-bottom: 0.1em solid white;
+}
+
+.lower-film-library-banner a:hover {
+  color: rgba(255, 255, 255, 0.78);
+    border-bottom: 0.1em solid rgba(255, 255, 255, 0.78);
+
+}
+
+
+/*--------BIM AD-------*/
+
+.BiMAd {
+  border-top: 0.5em solid rgba(255, 255, 255, 0.5);
+  background-image: url(../images/gem.jpg);
+  background-size: cover;
+/*  background-attachment: fixed;*/
+  background-position: center;
+  height: 30em;
+/*
+  padding-left:10em;
+  padding-right:10em;
+*/
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.BiMAd img {
+  margin-left: auto;
+}
+
+.BiMAd-p {
+  width: 40%;
+  color: black;
+  margin-right: auto;
+/*  text-shadow: 0 0 10px rgba(0, 0, 0, 0.42);*/
+}
+
+.BiMAd h2 {
+/*  float: right;*/
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.BiMAd h2 a {
+  color: #242e2e;
+  border-bottom: 0.1em solid #191F1F;
+}
+
+.BiMAd h2 a:hover {
+  border-bottom: 0.1em solid rgba(25, 31, 31, 0.);
+  color: rgba(25, 31, 31, 0.69);
 }
 
 /*------CONTACT------*/

@@ -1,5 +1,5 @@
 /*
- * Created 2015-2017 Caleb Ely
+ * Created 2015-2019 Caleb Ely
  * <https://CodeTri.net>
  */
 
@@ -118,8 +118,8 @@
   document.querySelector("#btn-shortfilms").addEventListener("click", loadVideos);
   document.querySelector("#btn-tut-bts").addEventListener("click", loadVideos);
 
-  // Load the featured playlist on page load
-  document.addEventListener("DOMContentLoaded", function(event) {
+  // Load the short films playlist on page load
+  document.addEventListener("DOMContentLoaded", function() {
     document.querySelector("#btn-shortfilms").click();
   });
 }());
