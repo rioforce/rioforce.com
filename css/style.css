@@ -379,9 +379,56 @@ video.fullscreen {
 .lower-film-library-banner a:hover {
   color: rgba(255, 255, 255, 0.78);
     border-bottom: 0.1em solid rgba(255, 255, 255, 0.78);
-
 }
 
+.upper-about-reel-banner {
+    width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 0.5em 0 0.5em 0;
+  font-size: 1.2em;
+}
+
+
+.upper-about-reel-banner a:hover {
+  color: rgba(255, 255, 255, 0.78);
+    border-bottom: 0.1em solid rgba(255, 255, 255, 0.78);
+/*    border-bottom: 0.1em solid white;*/
+}
+
+/* --------FEATURED ON-------- */
+
+.featuredon {
+  border-top: 0.5em solid rgba(255, 255, 255, 0.47);
+  padding: 2em 0 2em 0;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  background-image: url("../images/surf.jpg");
+  background-color: black;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.featuredon img {
+  padding: 1em 1em 1em 1em;
+  width: 16em;
+  vertical-align: middle;
+}
+
+.featuredon a img:hover {
+  opacity: 0.8;
+}
+
+#cinebrick {
+  width: 12em;
+}
+
+.featuredon h3 {
+  color: white;
+  padding-bottom: 1em;
+  cursor: default;
+  margin: 0;
+}
 
 /*--------BIM AD-------*/
 
@@ -428,6 +475,32 @@ video.fullscreen {
   border-bottom: 0.1em solid rgba(25, 31, 31, 0.);
   color: rgba(25, 31, 31, 0.69);
 }
+
+@media screen and (max-width: 900px) {
+  .BiMAd {
+    display: block;
+    height: auto;
+  }
+  
+  .BiMAd img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 16em;
+  }
+  
+  .BiMAd-p {
+    margin-left: auto;
+    width: 75%;
+    text-align: justify;
+  }
+  
+  .BiMAd-p h2 {
+    display: inline-block;
+    font-size: 1.5em;
+  }
+}
+
 
 /*------CONTACT------*/
 
