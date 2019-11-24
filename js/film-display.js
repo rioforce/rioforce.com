@@ -9,8 +9,9 @@
   var CONSTANTS = {
     API_KEY: "AIzaSyAnp7CY0EJ0o0elDINC7WmROmJiY2T-Clw",
     FILMS_IN_ROW: 3,
-    NUM_OF_VIDEOS: 6 //CHANGE THIS TO ADD ROW OTHER ETC
+    NUM_OF_VIDEOS: (document.documentElement.clientWidth > 500 ? 6 : 3)  //CHANGE THIS TO ADD ROW OTHER ETC
   };
+
 
   function _findParent(ele, _class) {
     // The desired element was not found on the page
@@ -122,4 +123,9 @@
   document.addEventListener("DOMContentLoaded", function() {
     document.querySelector("#btn-shortfilms").click();
   });
+
+  // Automatically play hero video background on tablet-sized and larger screens
+  if (document.documentElement.clientWidth >= 768) {
+    document.querySelector("video.fullscreen").setAttribute("autoplay", "true");
+  }
 }());
