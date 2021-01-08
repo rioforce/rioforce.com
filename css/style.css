@@ -627,9 +627,8 @@ video.fullscreen {
   color: white;
 }
 
-.content {
+#watch-page .content {
   display: flex;
-
 }
 
 #watch-main {
