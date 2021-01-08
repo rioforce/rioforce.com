@@ -613,8 +613,9 @@ video.fullscreen {
 
 #watch-main {
   margin-top: 5em;
-  margin-left: 5em;
-  width: 70%;
+  margin-left: 6em;
+  width: 67%;
+  min-width: 58%;
 }
 
 .watch-player {
@@ -628,7 +629,7 @@ video.fullscreen {
 
 #watch-main hr {
   margin-left: 0;
-  width: 1280px;
+  width: 100%;
   color: #272727;
 }
 
@@ -660,6 +661,8 @@ align-items: center;
 
 #watch-recs {
   margin-top: 5em;
+  margin-left: 2em;
+  margin-right: 6em;
 }
 
 #watch-next {
@@ -773,28 +776,31 @@ footer li {
 
 
 /*------QUERIES------*/
-@media (max-width: 355px) {
-  .socialism {
-    padding-top: 0.8em;
-  }
-  footer {
-    text-align: center;
-  }
-  #credit {
-    float: none;
-    margin: 0;
-    float: none;
+
+@media (max-width: 1400px) {
+  #watch-main, #watch-recs {
+    margin-left: 3em;
     margin-right: 0;
-    margin-top: 0;
   }
 }
 
-@media (max-width: 400px) {
-  #header-content-image h1 {
-    font-size: 2.95em;
+@media (max-width: 1050px) {
+  #watch-page .content {
+    display: block;
   }
-  #header-content-image h2 {
-    font-size: 1.3em;
+  #watch-main {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 1em;
+    width: 100%;
+  }
+  #watch-recs {
+    width: 100%;
+    margin: 1em 0 2em 0;
+  }
+  .watch-comments {
+    width: 90%;
+    margin: 0;
   }
 }
 
@@ -829,6 +835,10 @@ footer li {
     margin-top: 7em;
   }
 
+  #watch-main {
+    padding: 0;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -845,5 +855,30 @@ footer li {
   #lil-rio {
     left: 1em;
     width: 2.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  #header-content-image h1 {
+    font-size: 2.95em;
+  }
+  #header-content-image h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 355px) {
+  .socialism {
+    padding-top: 0.8em;
+  }
+  footer {
+    text-align: center;
+  }
+  #credit {
+    float: none;
+    margin: 0;
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
   }
 }
