@@ -140,12 +140,12 @@ nav {
   background-color: black;
   color: white;
   z-index: 2;
-
-  display: flex;
   justify-content: space-between;
 }
 
 .navigation ul {
+  display: flex;
+  float: right;
   list-style: none;
   margin: 0;
 }
@@ -178,36 +178,11 @@ nav {
   font-weight: 300;
 }
 
-.nav-social {
-  padding-right: 1em;
-}
-
-.nav-social a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5em;
-}
-
-.nav-social .fa-youtube:hover,
-.nav-social .fa-youtube:focus,
-.nav-social .fa-youtube:active {
+.nav-pages .fa-youtube,
+.nav-pages .fa-youtube:hover,
+.nav-pages .fa-youtube:focus,
+.nav-pages .fa-youtube:active {
   color: #E62117;
-}
-
-.nav-social .fa-twitter:hover,
-.nav-social .fa-twitter:focus,
-.nav-social .fa-twitter:active {
-  color: #1da1f2;
-}
-
-.nav-social .fa-instagram:hover,
-.nav-social .fa-instagram:focus,
-.nav-social .fa-instagram:active {
-  background-image: linear-gradient(270deg, #BC32A4 0%, #E03768 50%, #F67C33 100%);
-  border-radius: 35%;
-  padding: 0px 1.5px 0px 1.5px;
-  color: white;
-  margin: 0px -1.5px 0 -1.5px;
 }
 
 /*------HOMEPAGE HEADER------*/
