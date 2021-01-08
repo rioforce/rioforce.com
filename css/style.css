@@ -620,6 +620,60 @@ video.fullscreen {
   color: rgba(222, 222, 222, 0.77);
 }
 
+/* --------WATCH PAGE---------*/
+
+#watch-page {
+  background-color: #181818;
+  color: white;
+}
+
+#watch-main {
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.watch-player {
+  margin-top: 1em;
+}
+
+.film-date {
+  color: #808080;
+  font-size: ;
+}
+
+#watch-main hr {
+  margin-left: 0;
+  width: 1280px;
+  color: #272727;
+}
+
+#watch-profile {
+display: flex;
+align-items: center;
+}
+
+.watch-avatar {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px !important;
+}
+
+.watch-username {
+  padding-left: 1em;
+  font-weight: 700;
+}
+
+.film-description {
+  width: 60%;
+  margin-left: 4em;
+}
+
+#disqus_thread {
+
+}
+
 /*------FOOTER------*/
 
 footer {
