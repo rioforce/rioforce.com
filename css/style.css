@@ -217,7 +217,7 @@ video.fullscreen {
   /*  background: transparent;*/
   /*background: transparent url("http://bricksinmotion.com/movie/wp-content/uploads/2016/01/header_bricks.jpg") no-repeat fixed 50% 0px; background-attachment: fixed;*/
   background-size: cover;
-  padding: 12% 0 12%;
+  padding: 8% 0 8%;
   /*  text-transform: uppercase;*/
   text-align: center;
   color: white;
@@ -813,6 +813,11 @@ footer li {
   .navigation li {
     padding-left: 0.5em;
     padding-right: 0.5em;
+  }
+
+  #header-content-image {
+    padding: 0;
+
   }
 
   #header-home {
