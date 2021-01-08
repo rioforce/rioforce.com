@@ -671,7 +671,8 @@ align-items: center;
 }
 
 #watch-comments {
-  width: 60%;
+  width: 1280px;
+  margin-left: auto;
 }
 
 /*------FOOTER------*/
