@@ -612,7 +612,7 @@ video.fullscreen {
 }
 
 #watch-main {
-  margin-top: 4em;
+  margin-top: 5em;
   margin-left: 5em;
   width: 70%;
 }
@@ -623,7 +623,7 @@ video.fullscreen {
 
 .film-date {
   color: #808080;
-  font-size: ;
+  cursor: default;
 }
 
 #watch-main hr {
@@ -659,8 +659,13 @@ align-items: center;
 }
 
 #watch-recs {
-  margin-top: 4em;
+  margin-top: 5em;
 }
+
+#watch-next {
+margin: 0;
+cursor: default;
+} 
 
 .rec-vid {
   display: flex;
