@@ -143,6 +143,12 @@ nav {
   justify-content: space-between;
 }
 
+#rioforce-logo-nav {
+  position: relative;
+  margin-top: 0.4em;
+  left: 10em;
+}
+
 .navigation ul {
   display: flex;
   float: right;
@@ -156,12 +162,8 @@ nav {
 }
 
 .nav-pages {
-  padding-left: 1em;
-}
-
-.nav-pages .bullet {
-  padding-left: 0;
-  padding-right: 0;
+  position: relative;
+  right: 10em;
 }
 
 .nav-pages a:hover,
@@ -182,6 +184,7 @@ nav {
 .nav-pages .fa-youtube:hover,
 .nav-pages .fa-youtube:focus,
 .nav-pages .fa-youtube:active {
+  font-size: 1.35em;
   color: #E62117;
 }
 
@@ -779,7 +782,7 @@ footer li {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   #header-content-image h1 {
     font-size: 2.95em;
   }
@@ -788,24 +791,32 @@ footer li {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: center;
   }
 
-  nav ul { padding: 0; }
-  .nav-pages { padding-left: 0; }
+  #rioforce-logo-nav {
+    left: 1em;
+    float: left;
+    width: 2em;
+    margin-top: 0.7em;
+  }
+
+   nav ul { padding: 0; float: right;}
+  .nav-pages { right: unset; padding-left: 0; }
   .nav-pages a { font-size: 1.2em; }
+  
+  .navigation li {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
 
   #header-home {
     margin-top: 7em;
   }
 
-  .nav-social {
-    position: relative;
-    top: -0.25em;
-  }
 }
 
 @media (max-width: 700px) {
