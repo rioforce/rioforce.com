@@ -307,18 +307,16 @@ video.fullscreen {
 .film-detail img:hover,
 .film-detail img:focus,
 .film-detail img:active {
-  opacity: 0.85;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .film .title {
-  text-align: center;
-/*  text-shadow: 0 0 1em rgba(0, 0, 0, 0.55);*/
+  /* text-align: center;
   color: white;
-
   position: relative;
-/*  top: -4px;*/
-  font-weight: 300;
-/*  font-size: 0.9em;*/
+  font-weight: 300; */
+  display: none;
 }
 
 .film > a,
@@ -327,7 +325,7 @@ video.fullscreen {
 }
 
 .film img {
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .images a:hover,
@@ -395,6 +393,13 @@ video.fullscreen {
   vertical-align: middle;
 }
 
+.featuredon .film {
+  padding: 1em 1em 1em 1em;
+  width: 16em;
+  vertical-align: middle;
+  display: inline;
+}
+
 .featuredon a img:hover {
   opacity: 0.8;
 }
@@ -408,6 +413,54 @@ video.fullscreen {
   padding-bottom: 1em;
   cursor: default;
   margin: 0;
+}
+
+/* --------FEATURED DROPDOWN------- */
+
+.film-detail {
+  max-height: 0;
+  overflow: hidden;
+  padding-right: 2em;
+  padding-left: 2em;
+
+  background-color: #fff;
+  display: flex;
+
+  transition: max-height 0.3s ease;
+}
+.film-detail.visible { max-height: 120em; }
+
+.film-detail > .video-container {
+  margin-right: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.film-detail h1 { margin: 0; }
+
+.film-detail a {
+  font-size: 1.1em;
+  color: blue;
+}
+
+.film-detail a:hover,
+.film-detail a:focus,
+.film-detail a:active {
+  border-bottom: 2px inset #373740;
+}
+
+.film-detail > .details {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.details > .images {
+  margin-top: 1.5em;
+}
+
+.details .year {
+  font-size: 0.6em;
+  font-weight: 400;
 }
 
 /*--------BIM AD-------*/
@@ -461,20 +514,20 @@ video.fullscreen {
     display: block;
     height: auto;
   }
-  
+
   .BiMAd img {
     display: block;
     margin-right: auto;
     margin-left: auto;
     width: 16em;
   }
-  
+
   .BiMAd-p {
     margin-left: auto;
     width: 75%;
     text-align: justify;
   }
-  
+
   .BiMAd-p h2 {
     display: inline-block;
     font-size: 1.5em;
