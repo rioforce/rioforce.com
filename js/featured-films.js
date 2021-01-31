@@ -27,8 +27,8 @@ function _isSame(oldArea, newArea) {
 }
 
 function insertFilms(films) {
-  var div = null,
-    qWrapper = document.querySelector(".film-row-wrapper");
+  let div = null;
+  let qWrapper = document.querySelector(".film-row-wrapper");
 
   // If there are films already visible, remove them
   if (qWrapper.children.length >= 1) {
@@ -58,16 +58,16 @@ function generateFilmReel(data) {
     })
     .then(function (html) {
       // Generate a thumbnail for each video
-      var films = [];
+      let films = [];
       data.items.forEach(function (v, i) {
         v = v.snippet;
 
         // If a maxres thumbnail is not available,
         // fallback to a medium-sized image (medium because they are letterboxed
         // and keep the wide-screen aspect ratio)
-        var filmThumbnail = v.thumbnails.maxres || v.thumbnails.medium;
+        let filmThumbnail = v.thumbnails.maxres || v.thumbnails.medium;
 
-        var film = new Film(
+        let film = new Film(
           i,
           v.title,
           v.resourceId.videoId,
@@ -83,8 +83,8 @@ function generateFilmReel(data) {
 }
 
 function loadVideos(e) {
-  var qBtn = _findParent(e.target, "btn-playlist-toggle"),
-    qActiveBtn = document.querySelector(".btn-row .btn.active");
+  let qBtn = _findParent(e.target, "btn-playlist-toggle");
+  let qActiveBtn = document.querySelector(".btn-row .btn.active");
 
   // A playlist toggle button was not clicked
   if (qBtn === null) {
