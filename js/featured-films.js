@@ -1,26 +1,11 @@
 import { Film } from "./class-film.js";
+import { find_parent } from "./find-parent.js";
 
 const CONSTANTS = {
   API_KEY: "AIzaSyAnp7CY0EJ0o0elDINC7WmROmJiY2T-Clw",
   FILMS_IN_ROW: 3,
   NUM_OF_VIDEOS: document.documentElement.clientWidth > 500 ? 6 : 3, //CHANGE THIS TO ADD ROW OTHER ETC
 };
-
-function _findParent(ele, _class) {
-  // The desired element was not found on the page
-  if (ele === null) {
-    return null;
-  }
-
-  // We found the desired element
-  if (ele.classList.contains(_class)) {
-    return ele;
-
-    // Keep searching for the element
-  } else {
-    return _findParent(ele.parentElement, _class);
-  }
-}
 
 function _isSame(oldArea, newArea) {
   return oldArea === newArea;
@@ -83,7 +68,7 @@ function generateFilmReel(data) {
 }
 
 function loadVideos(e) {
-  let qBtn = _findParent(e.target, "btn-playlist-toggle");
+  let qBtn = find_parent(e.target, ".btn-playlist-toggle");
   let qActiveBtn = document.querySelector(".btn-row .btn.active");
 
   // A playlist toggle button was not clicked
