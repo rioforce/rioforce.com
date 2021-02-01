@@ -80,8 +80,8 @@ export function on_site_load(filmPage) {
   }
 
   // Abort if this is not a film
-  var qFilm = document.querySelector(`#${filmPage}`);
-  let (!qFilm.classList.contains("film")) {
+  let qFilm = document.querySelector(`#${filmPage}`);
+  if (!qFilm.classList.contains("film")) {
     return false;
   }
 

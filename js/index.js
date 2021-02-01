@@ -1,5 +1,5 @@
-import { load_page } from "./client-work";
-import { find_parent, on_site_load } from "./find-parent.js";
+import { load_page, on_site_load } from "./client-work.js";
+import { find_parent } from "./find-parent.js";
 
 // A film was possibly clicked
 document.querySelector(".featuredon").addEventListener("click", function (e) {
