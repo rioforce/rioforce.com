@@ -6,4 +6,7 @@ const qCurrentYear = document.querySelector("#current-year");
 qCurrentYear.textContent = curDate.getFullYear();
 
 // How many years have I been brickfilming?
-document.querySelector("#years-since").textContent = years_since(2007, 12, 10);
+const q_years_since = document.querySelector("#years-since");
+if (q_years_since) {
+  q_years_since.textContent = years_since(2007, 12, 10);
+}
