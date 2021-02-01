@@ -154,54 +154,54 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
+
   background-color: black;
   color: white;
   z-index: 2;
-  justify-content: space-between;
+
+   display: flex;
+   justify-content: center;
 }
 
-#rioforce-logo-nav {
-  position: relative;
-  margin-top: 0.4em;
-  left: 10em;
-}
-
-.navigation ul {
+nav > div {
+  width: 81%;
   display: flex;
-  float: right;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
   list-style: none;
-  margin: 0;
 }
 
-.navigation li {
-  display: inline-block;
-  padding: 1em;
+nav li {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 
-.nav-pages {
-  position: relative;
-  right: 10em;
-}
-
-.nav-pages a:hover,
-.nav-pages a:focus,
-.nav-pages a:active {
-  border-bottom: 1px inset #000;
-}
-
-.nav-pages a {
-  text-decoration: none;
-  color: white;
+nav a {
   font-family: var(--font-headers);
   font-size: 1.3rem;
   font-weight: 300;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid transparent;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+  border-color: white;
 }
 
-.nav-pages .fa-youtube,
-.nav-pages .fa-youtube:hover,
-.nav-pages .fa-youtube:focus,
-.nav-pages .fa-youtube:active {
-  font-size: 1.35em;
+
+#rio-logo {
+  border: none;
+}
+
+nav .fa-youtube {
+  font-size: 1.7rem;
   color: #e62117;
 }
 
@@ -874,33 +874,22 @@ footer li {
 }
 
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
+  nav > div {
+    width: 100%;
   }
 
-  #rioforce-logo-nav {
-    left: 1em;
-    float: left;
-    width: 2em;
-    margin-top: 0.7em;
+  nav li {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 
-  nav ul {
-    padding: 0;
-    float: right;
-  }
-  .nav-pages {
-    right: unset;
-    padding-left: 0;
-  }
-  .nav-pages a {
+  nav a {
     font-size: 1.2rem;
   }
 
-  .navigation li {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+  #rioforce-logo-nav {
+    margin-left: 0.5rem;
+    transform: scale(70%);
   }
 
   #header-content-image {
