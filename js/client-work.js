@@ -81,7 +81,7 @@ export function on_site_load(filmPage) {
 
   // Abort if this is not a film
   let qFilm = document.querySelector(`#${filmPage}`);
-  if (!qFilm.classList.contains("film")) {
+  if (qFilm && !qFilm.classList.contains("film")) {
     return false;
   }
 
