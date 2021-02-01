@@ -159,8 +159,10 @@ nav {
   color: white;
   z-index: 2;
 
-   display: flex;
-   justify-content: center;
+  display: flex;
+  justify-content: center;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 nav > div {
@@ -377,15 +379,20 @@ video.fullscreen {
 
 /* --------FEATURED ON-------- */
 
-.featuredon {
-  border-top: 0.5em solid rgba(255, 255, 255, 0.47);
-  padding: 2em 0 2em 0;
-  text-align: center;
-  margin: 0 auto 0 auto;
+
+#home .featuredon {
   background-image: url("../images/surf.jpg");
   background-color: black;
   background-attachment: fixed;
   background-position: center;
+
+  border-top: 0.5em solid rgba(255, 255, 255, 0.47);
+  padding: 2em 0 2em 0;
+}
+
+.featuredon {
+  text-align: center;
+  margin: 0 auto 0 auto;
 }
 
 .featuredon .featuredlogo {
