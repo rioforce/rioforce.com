@@ -289,10 +289,6 @@ video.fullscreen {
   cursor: pointer;
 }
 
-.film {
-  display: block;
-}
-
 #video-lib-buttons {
   background-color: #1665c1;
   padding-top: 0;
@@ -318,6 +314,10 @@ video.fullscreen {
 
 .btn {
   width: 17.5em;
+}
+
+.film {
+  display: block;
 }
 
 .film:hover,
@@ -929,6 +929,10 @@ footer li {
   #lil-rio {
     left: 1em;
     width: 2.5em;
+  }
+
+  body::before {
+    content: "700";
   }
 }
 
