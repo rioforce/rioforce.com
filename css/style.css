@@ -289,6 +289,10 @@ video.fullscreen {
   cursor: pointer;
 }
 
+.film {
+  display: block;
+}
+
 #video-lib-buttons {
   background-color: #1665c1;
   padding-top: 0;
@@ -322,7 +326,7 @@ video.fullscreen {
 .film-detail img:hover,
 .film-detail img:focus,
 .film-detail img:active {
-  opacity: 0.5;
+  opacity: 0.75;
   cursor: pointer;
 }
 
@@ -339,9 +343,6 @@ video.fullscreen {
   border-bottom: none;
 }
 
-.film img {
-  /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
-}
 
 .lower-film-library-banner {
   width: 100%;

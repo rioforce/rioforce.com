@@ -51,7 +51,7 @@ export function load_page(qFilm) {
   // Extract the file name for this film and the row it is on
   let qFilmRow = qFilm.parentElement;
   let filmPage = qFilm.id;
-  let filmName = qFilm.children[1].textContent;
+  let filmName = qFilm.dataset.title;
 
   // If a film detail is already on the page, we need to remove it
   let qOldFilmDetail = document.querySelector(".film-detail");
