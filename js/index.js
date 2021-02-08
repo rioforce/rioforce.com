@@ -6,7 +6,6 @@ let is_small_screen = window.getComputedStyle(document.querySelector("body"), ":
 if (is_small_screen === "none") {
   // A film was possibly clicked
   document.querySelector(".featuredon").addEventListener("click", function (e) {
-    e.preventDefault();
     // Find the container element for this film
     let qFilm = find_parent(e.target, ".film");
 
@@ -14,6 +13,7 @@ if (is_small_screen === "none") {
     if (qFilm === null) {
       return false;
     }
+    e.preventDefault();
     load_page(qFilm);
   });
 }
