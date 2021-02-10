@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="kxGXyzR3On-jclHw7NmitN8ydHhYlaCKoFb_wDOFh_s">
   <title>rioforce</title>
@@ -18,11 +18,12 @@
 
 <body id="home">
   <div class="container">
-    <div class="content">
+    <nav>
+      <div>
+        <a id="rio-logo" href="https://rioforce.com">
+          <img id="rioforce-logo-nav" alt="rioforce" width="50" height="50" src="images/Rioforce-logo-round-white.png">
+        </a>
 
-      <nav class="navigation">
-        <a href="https://rioforce.com"> <img id="rioforce-logo-nav" alt="rioforce" width="50px" height="50px"
-            src="images/Rioforce-logo-round-white.png" /></a>
         <ul class="nav-pages">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -33,24 +34,26 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
+    </nav>
 
-      <header id="header-home">
-        <div id="header-content-image">
-          <video class="fullscreen" poster="images/contact-bg.jpg" loop muted>
-            <source src="images/site-reel.mp4" type="video/mp4">
-            <source src="images/site-reel.ogv" type="video/ogg">
-            <source src="images/site-reel.webm" type="video/webm">
-          </video>
+    <header id="header-home">
+      <div id="header-content-image">
+        <video class="fullscreen" poster="images/contact-bg.jpg" loop muted>
+          <source src="images/site-reel.mp4" type="video/mp4">
+          <source src="images/site-reel.ogv" type="video/ogg">
+          <source src="images/site-reel.webm" type="video/webm">
+        </video>
 
-          <div id="header-text">
-            <img id="rioforce-logo-home" alt="" width="150" height="150" src="images/Rioforce-logo-round-white.png">
-            <h1>rioforce</h1>
-            <h2>stop-motion animation</h2>
-          </div>
+        <div id="header-text">
+          <img id="rioforce-logo-home" alt="" width="150" height="150" src="images/Rioforce-logo-round-white.png">
+          <h1>rioforce</h1>
+          <h2>stop-motion animation</h2>
         </div>
-      </header>
+      </div>
+    </header>
 
+    <main class="content">
       <span id="about"></span>
 
       <div class="upper-about-reel-banner">
@@ -59,10 +62,10 @@
 
       <div class="contact">
         <h1 class="large-headers">About</h1>
-        <img id="lil-rio" src="images/lil-rio.png" alt="rioforce photo" />
+        <img id="lil-rio" src="images/lil-rio.png" alt="rioforce photo">
         <div id="about">
           <p>My name is <span class="emphasis">Benjamin Ely</span>, but I'm called rioforce on the internet.
-            <br><br>I've been an animator for over <span class="emphasis" id="years-since">10</span> years, and still enjoy every moment
+            <br><br>I've been an animator for over <span class="emphasis" id="years-since">13</span> years, and still enjoy every moment
             at the animation desk. Telling stories fuels me, and animation just seems like the perfect medium to do
             that. I specialize in stop-motion animation, working with companies such as <span
               class="emphasis">Stikbot</span> and <span class="emphasis">Jazwares</span>, but am also skilled in CGI
@@ -87,37 +90,40 @@
         <h1 class="clients-header">Clients</h1>
 
         <div id="featured-row">
-          <div class="film" id="envision">
-            <img width="320" height="137" src="images/Envision.png" class="featuredlogo">
-            <h2 class="title">Envision Healthcare</h2>
-          </div>
-          <div class="film" id="monitogo">
-            <img width="320" height="137" src="images/Monitogo.png" class="featuredlogo">
-            <h2 class="title">Monitogo Studios</h2>
-          </div>
-          <div class="film" id="stikbot">
-            <img width="320" height="137" src="images/Stikbot.png" class="featuredlogo">
-            <h2 class="title">Stikbot</h2>
-          </div>
-          <div class="film" id="tubeheroes">
-            <img width="320" height="137" src="images/TubeHeroes.png" class="featuredlogo">
-            <h2 class="title">Tube Heroes</h2>
-          </div>
+          <a class="film" id="envision" data-title="Envision Healthcare" href="envision/index.html">
+            <img width="320" height="137" src="images/Envision.png" class="featuredlogo" alt="Envision Healthcare">
+          </a>
+          <a class="film" id="monitogo" data-title="Monitogo Studios" href="monitogo/index.html">
+            <img width="320" height="137" src="images/Monitogo.png" class="featuredlogo" alt="Monitogo Studios">
+          </a>
+          <a class="film" id="stikbot" data-title="Stikbot" href="stikbot/index.html">
+            <img width="320" height="137" src="images/Stikbot.png" class="featuredlogo" alt="Stikbot">
+          </a>
+          <a class="film" id="tubeheroes" data-title="Tube Heroes" href="tubeheroes/index.html">
+            <img width="320" height="137" src="images/TubeHeroes.png" class="featuredlogo" alt="Tube Heros">
+          </a>
         </div>
-
 
         <div id="featured-row">
           <h3>_________________</h3>
           <h1 class="festiv-header">Featured on</h1>
-          <a href="http://www.brickcan.com/" target="_blank"><img src="images/brickcan.png"  class="featuredlogo"></a>
-          <a href="https://cinebrick.wordpress.com/" target="_blank"><img src="images/cinebrick%20logo.png"
-              id="cinebrick"  class="featuredlogo"></a>
-          <a href="https://brickworld.com/brickfilm-festival/" target="_blank"><img src="images/BrickWorld.png"  class="featuredlogo"></a>
-          <a href="https://brickfilms.fandom.com/wiki/Rebrick#The_Greatest_Villain_of_All_Time_in_Ninjago"
-            target="_blank"><img src="images/ReBrick.png"  class="featuredlogo"></a>
+          <a href="http://www.brickcan.com/" target="_blank">
+            <img src="images/brickcan.png" class="featuredlogo">
+          </a>
+
+          <a href="https://cinebrick.wordpress.com/" target="_blank">
+            <img src="images/cinebrick%20logo.png" id="cinebrick" class="featuredlogo">
+          </a>
+
+          <a href="https://brickworld.com/brickfilm-festival/" target="_blank">
+            <img src="images/BrickWorld.png" class="featuredlogo">
+          </a>
+
+          <a href="https://brickfilms.fandom.com/wiki/Rebrick#The_Greatest_Villain_of_All_Time_in_Ninjago" target="_blank">
+            <img src="images/ReBrick.png" class="featuredlogo">
+          </a>
         </div>
       </div>
-
 
       <span id="portfolio"></span>
 
@@ -138,8 +144,9 @@
         </div>
 
         <div class="film-row-wrapper"></div>
-        <div class="lower-film-library-banner"><a href="https://www.youtube.com/rioforce" target="_blank">See more on
-            YouTube</a></div>
+        <div class="lower-film-library-banner">
+          <a href="https://www.youtube.com/rioforce" target="_blank">See more on YouTube</a>
+        </div>
       </div>
 
       <!-- <div class="BiMAd">
@@ -150,15 +157,15 @@
       </div> -->
 
       <!--      <div class="social-pretenses"></div>-->
+    </main>
 
-      <footer>
-        <div id="submebutton">
-          <div class="g-ytsubscribe" data-channel="LukeActionFilms" data-layout="full" data-theme="default"
-            data-count="default"></div>
-          </div>
-          <h3 id="credit">&copy; <span id="current-year"></span> Benjamin Ely</h3>
-      </footer>
-    </div>
+    <footer>
+      <div id="submebutton">
+        <div class="g-ytsubscribe" data-channel="LukeActionFilms" data-layout="full" data-theme="default"
+          data-count="default"></div>
+        </div>
+        <h3 id="credit">&copy; <span id="current-year"></span> Benjamin Ely</h3>
+    </footer>
   </div>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CElement.prototype.matches"></script>
@@ -167,6 +174,6 @@
 
   <script type="module" src="js/script.js"></script>
   <script type="module" src="js/featured-films.js"></script>
-  <script type="module" src="js/client-work.js"></script>
+  <script type="module" src="js/index.js"></script>
 </body>
 </html>
