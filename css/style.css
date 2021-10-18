@@ -195,7 +195,6 @@ nav a:active {
   border-color: white;
 }
 
-
 #rio-logo {
   border: none;
 }
@@ -343,7 +342,6 @@ video.fullscreen {
   border-bottom: none;
 }
 
-
 .lower-film-library-banner {
   width: 100%;
   background-color: #1665c1;
@@ -377,7 +375,6 @@ video.fullscreen {
 }
 
 /* --------FEATURED ON-------- */
-
 
 #home .featuredon {
   background-image: url("../images/surf.jpg");
@@ -734,6 +731,11 @@ video.fullscreen {
   margin-left: 4em;
 }
 
+.article-description {
+  width: 85%;
+  margin-left: 4em;
+}
+
 .watch-comments {
   width: 1280px;
   margin-left: auto;
@@ -743,6 +745,7 @@ video.fullscreen {
   margin-top: 5em;
   margin-left: 2em;
   margin-right: 6em;
+  width: 24em;
 }
 
 #watch-next {
