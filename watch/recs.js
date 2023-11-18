@@ -1,7 +1,7 @@
 // Function to fetch JSON data from an external file
 async function fetchPageData() {
     try {
-        const response = await fetch('pages.json'); // Adjust the file name and path as needed
+        const response = await fetch('/watch/pages.json'); // Adjust the file name and path as needed
         const data = await response.json();
         return data.pages;
     } catch (error) {

@@ -719,7 +719,7 @@ video.fullscreen {
   margin-top: 1em;
 }
 
-.film-date {
+#film-date {
   color: #808080;
   cursor: default;
 }
@@ -735,23 +735,23 @@ video.fullscreen {
   align-items: center;
 }
 
-.watch-avatar {
+#watch-avatar {
   border-radius: 100%;
   width: 50px;
   height: 50px !important;
 }
 
-.watch-username {
+#watch-username {
   padding-left: 1em;
   font-weight: 700;
 }
 
-.film-description {
+#film-description {
   width: 60%;
   margin-left: 4em;
 }
 
-.article-description {
+#article-description {
   width: 85%;
   margin-left: 4em;
 }
