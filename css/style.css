@@ -485,6 +485,15 @@ video.fullscreen {
   padding-bottom: 1.5em;
 }
 
+.film-detail>.details ul {
+  padding: 0;
+}
+
+
+.film-detail>.details li {
+  list-style: none;
+}
+
 .details>.images {
   margin-top: 1.5em;
 }
