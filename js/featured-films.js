@@ -4,7 +4,7 @@ import { find_parent } from "./find-parent.js";
 const CONSTANTS = {
   API_KEY: "AIzaSyAnp7CY0EJ0o0elDINC7WmROmJiY2T-Clw",
   FILMS_IN_ROW: 3,
-  NUM_OF_VIDEOS: document.documentElement.clientWidth > 500 ? 6 : 3, //CHANGE THIS TO ADD ROW OTHER ETC
+  NUM_OF_VIDEOS: document.documentElement.clientWidth > 500 ? 9 : 4, //CHANGE THIS TO ADD ROW OTHER ETC
 };
 
 function _isSame(oldArea, newArea) {
@@ -93,11 +93,11 @@ function loadVideos(e) {
   // Load videos for the specified playlist from the YouTube API
   fetch(
     "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=" +
-      CONSTANTS.NUM_OF_VIDEOS +
-      "&playlistId=" +
-      qBtn.dataset.id +
-      "&fields=items(snippet(playlistId%2CresourceId(playlistId%2CvideoId)%2Cthumbnails%2Ctitle))&key=" +
-      CONSTANTS.API_KEY
+    CONSTANTS.NUM_OF_VIDEOS +
+    "&playlistId=" +
+    qBtn.dataset.id +
+    "&fields=items(snippet(playlistId%2CresourceId(playlistId%2CvideoId)%2Cthumbnails%2Ctitle))&key=" +
+    CONSTANTS.API_KEY
   )
     .then(function (r) {
       return r.json();
