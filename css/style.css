@@ -494,6 +494,13 @@ video.fullscreen {
   list-style: none;
 }
 
+.details>.desc {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 .details>.images {
   margin-top: 1.5em;
 }
