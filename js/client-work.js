@@ -19,10 +19,10 @@ export function update_page_title(title) {
 }
 
 function remove_film_detail() {
+  update_page_title();
   function _end() {
     this.removeEventListener("transitionend", _end);
     this.parentElement.removeChild(this);
-    update_page_title();
   }
 
   let qFilmDetail = document.querySelector(".film-detail");
