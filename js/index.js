@@ -1,5 +1,28 @@
 import { load_page, on_site_load } from "./client-work.js";
 import { find_parent } from "./find-parent.js";
+import { setYearInFooter } from "./footer.js";
+
+function years_since(year, month, day) {
+  // Get the current date
+  const currentDate = new Date();
+  let now = {
+    day: currentDate.getUTCDate(),
+    year: currentDate.getUTCFullYear(),
+    month: currentDate.getUTCMonth() + 1  // month is zero-based
+  };
+
+  // Calculate the years of exp
+  let diff = now.year % year;
+
+  // If the current month is less than the given month OR
+  // the current month is the same as the given month AND
+  // the current dat is less than the given day,
+  // the year exp is one year too many, so we need to correct it
+  if (now.month < month || (now.month === month && now.day < day)) {
+    diff -= 1
+  }
+  return diff.toString();
+}
 
 // Go to the client work subpage if we're on a smaller screen
 let is_small_screen = window.getComputedStyle(document.querySelector("body"), "::before").content;
@@ -26,4 +49,18 @@ window.addEventListener("DOMContentLoaded", function () {
     film = window.location.hash.match(/#([a-z-]*?)$/i)[1].toLowerCase();
   }
   on_site_load(film);
+
+  // Set the current year in the footer
+  setYearInFooter();
+
+  // How many years have I been brickfilming?
+  const q_years_since = document.querySelector("#years-since");
+  if (q_years_since) {
+    q_years_since.textContent = years_since(2007, 12, 10);
+  }
+
+  // Automatically play hero video background on tablet-sized and larger screens
+  if (document.documentElement.clientWidth >= 768) {
+    document.querySelector("video.fullscreen").setAttribute("autoplay", "");
+  }
 });

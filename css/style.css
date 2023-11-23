@@ -833,6 +833,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  color: rgb(55, 55, 64);
 }
 
 footer i {
@@ -960,6 +961,12 @@ footer li {
   }
 }
 
+@media (max-width: 768px) {
+  body::before {
+    content: "768";
+  }
+}
+
 @media (max-width: 700px) {
   #about p {
     padding-left: 1em;
@@ -974,10 +981,6 @@ footer li {
   #lil-rio {
     left: 1em;
     width: 2.5em;
-  }
-
-  body::before {
-    content: "700";
   }
 }
 

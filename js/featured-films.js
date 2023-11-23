@@ -115,7 +115,4 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("#btn-shortfilms").click();
 });
 
-// Automatically play hero video background on tablet-sized and larger screens
-if (document.documentElement.clientWidth >= 768) {
-  document.querySelector("video.fullscreen").setAttribute("autoplay", "true");
-}
+
