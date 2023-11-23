@@ -1,21 +1,12 @@
 import { setYearInFooter } from "../../js/footer.js";
+import { fetchHtmlFile } from "../../js/fetch-files.js";
 
-function fetchHtmlFile(file) {
-    return fetch(file)
-        .then(response => response.text())
-        .catch(error => console.error(`Error loading file ${file}:`, error));
-}
-
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", async () => {
     // Load the site nav and footer
-    fetchHtmlFile("/watch/templates/nav.html").then((html) => {
-        document.querySelector("#site-nav").innerHTML = html;
-    });
-    fetchHtmlFile("/watch/templates/footer.html").then((html) => {
-        document.querySelector("#site-footer").innerHTML = html;
+    document.querySelector("#site-nav").innerHTML = (await fetchHtmlFile("/watch/templates/nav.html"));
+    document.querySelector("#site-footer").innerHTML = (await fetchHtmlFile("/watch/templates/footer.html"));
 
-        // Set the current year in the footer
-        setYearInFooter();
-    });
+    // Set the current year in the footer
+    setYearInFooter();
 });
 

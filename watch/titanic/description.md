@@ -19,22 +19,20 @@ I still can't help but wonder who the target audience for this set is. There are
 
 If you're interested in more Behind the Scenes of the brickfilm I made with the Titanic, be sure to check out my YouTube #shorts video for a quick look into the production of this film.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/L9-pCk-vlFc/0.jpg)](https://www.youtube.com/watch?v=L9-pCk-vlFc)
-
-https://www.youtube.com/watch?v=L9-pCk-vlFc
+<iframe width="800" height="500" src="https://www.youtube.com/embed/L9-pCk-vlFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Special thanks to the LEGO Ambassador Network for providing this set for review.
 
 Voice Actors:
 
--   [Mark Nelson](https://www.youtube.com/channel/UCI1NkDHY187f1ontRjWtRlQ)
+- [Mark Nelson](https://www.youtube.com/channel/UCI1NkDHY187f1ontRjWtRlQ)
 
--   [Hudson Ludy](https://www.youtube.com/c/Spudson)
+- [Hudson Ludy](https://www.youtube.com/c/Spudson)
 
--   [Rioforce](https://www.youtube.com/rioforce)
+- [Rioforce](https://www.youtube.com/rioforce)
 
--   [Natalie Zwolanek](https://www.youtube.com/user/starwarsstudio100)
+- [Natalie Zwolanek](https://www.youtube.com/user/starwarsstudio100)
 
--   [Squidtastic](https://www.youtube.com/channel/UC1XHGQ4P5iT2OhwEIdDewLg)
+- [Squidtastic](https://www.youtube.com/channel/UC1XHGQ4P5iT2OhwEIdDewLg)
 
 -rioforce

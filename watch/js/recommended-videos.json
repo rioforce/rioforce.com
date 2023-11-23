@@ -1,86 +1,86 @@
 {
-    "pages": [
+    "videos": [
         {
             "title": "NINJAGO x EVANGELION Theme Song Parody | BEHIND THE SCENES",
             "thumbnail": "https://i.ytimg.com/vi/3hOMe4KMTR4/maxresdefault.jpg",
-            "link": "https://example.com/page1",
+            "url": "https://example.com/page1",
             "author": "rioforce",
             "date": "July 6, 2021"
         },
         {
             "title": "LEGO Character of a Ninja",
             "thumbnail": "https://placekitten.com/201/150",
-            "link": "https://example.com/page2",
+            "url": "https://example.com/page2",
             "author": "rioforce",
             "date": "Aug 11, 2021"
         },
         {
             "title": "Page 3",
             "thumbnail": "https://placekitten.com/202/150",
-            "link": "https://example.com/page3",
+            "url": "https://example.com/page3",
             "author": "rioforce",
             "date": "July 6, 2021"
         },
         {
             "title": "Page 4",
             "thumbnail": "https://placekitten.com/203/150",
-            "link": "https://example.com/page4",
+            "url": "https://example.com/page4",
             "author": "rioforce",
             "date": "July 6, 2021"
         },
         {
             "title": "Page 5",
             "thumbnail": "https://placekitten.com/204/150",
-            "link": "https://example.com/page5",
+            "url": "https://example.com/page5",
             "author": "rioforce",
             "date": "July 6, 2021"
         },
         {
             "title": "Page 6",
             "thumbnail": "https://placekitten.com/205/150",
-            "link": "https://example.com/page6",
+            "url": "https://example.com/page6",
             "author": "rioforce",
             "date": "July 6, 2021"
         },
         {
             "title": "Page 7",
             "thumbnail": "https://placekitten.com/206/150",
-            "link": "https://example.com/page7",
+            "url": "https://example.com/page7",
             "author": "rioforce",
             "date": "July 6, 2021"
         },
         {
             "title": "Page 8",
             "thumbnail": "https://placekitten.com/207/150",
-            "link": "https://example.com/page8",
+            "url": "https://example.com/page8",
             "author": "rioforce",
             "date": "July 6, 2021"
         },
         {
             "title": "Page 9",
             "thumbnail": "https://placekitten.com/208/150",
-            "link": "https://example.com/page9",
+            "url": "https://example.com/page9",
             "author": "rioforce",
             "date": "July 6, 2021"
         },
         {
             "title": "Page 10",
             "thumbnail": "https://placekitten.com/209/150",
-            "link": "https://example.com/page10",
+            "url": "https://example.com/page10",
             "author": "rioforce",
             "date": "July 6, 2021"
         },
         {
             "title": "Page 11",
             "thumbnail": "https://placekitten.com/210/150",
-            "link": "https://example.com/page11",
+            "url": "https://example.com/page11",
             "author": "rioforce",
             "date": "July 6, 2021"
         },
         {
             "title": "Page 12",
             "thumbnail": "https://placekitten.com/211/150",
-            "link": "https://example.com/page12",
+            "url": "https://example.com/page12",
             "author": "rioforce",
             "date": "July 6, 2021"
         }

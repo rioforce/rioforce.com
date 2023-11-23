@@ -1,6 +1,6 @@
 export function Film(id, title, url, playlist, thumbnail) {
-  this.id = "film-" + id;
-  this.url = "https://www.youtube.com/watch?v=" + url + "&list=" + playlist;
+  this.id = `film-${id}`;
+  this.url = `https://www.youtube.com/watch?v=${url}&list=${playlist}`;
   this.title = title;
   this.thumbnail = thumbnail;
   this.html = null;
