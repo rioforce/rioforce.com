@@ -28,7 +28,7 @@ function years_since(year, month, day) {
 let is_small_screen = window.getComputedStyle(document.querySelector("body"), "::before").content;
 if (is_small_screen === "none") {
   // A film was possibly clicked
-  document.querySelector(".featuredon").addEventListener("click", function (e) {
+  document.querySelector(".featuredon")?.addEventListener("click", function (e) {
     // Find the container element for this film
     let qFilm = find_parent(e.target, ".film");
 
