@@ -3,5 +3,14 @@
         "default": true,
         "MD013": false,
         "MD033": false
+    },
+    "[html]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.formatOnType": false,
+        "editor.formatOnSave": false
+    },
+    "[javascript]": {
+        "editor.maxTokenizationLineLength": 2500,
+        "editor.formatOnSave": true
     }
 }
