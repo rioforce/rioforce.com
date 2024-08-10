@@ -1,4 +1,4 @@
-import { load_page, on_site_load } from "./client-work.js";
+import { loadPage, onSiteLoad } from "./client-work.js";
 import { find_parent } from "./find-parent.js";
 import { setYearInFooter } from "./footer.js";
 
@@ -8,7 +8,7 @@ function years_since(year, month, day) {
   let now = {
     day: currentDate.getUTCDate(),
     year: currentDate.getUTCFullYear(),
-    month: currentDate.getUTCMonth() + 1  // month is zero-based
+    month: currentDate.getUTCMonth() + 1, // month is zero-based
   };
 
   // Calculate the years of exp
@@ -19,26 +19,31 @@ function years_since(year, month, day) {
   // the current dat is less than the given day,
   // the year exp is one year too many, so we need to correct it
   if (now.month < month || (now.month === month && now.day < day)) {
-    diff -= 1
+    diff -= 1;
   }
   return diff.toString();
 }
 
 // Go to the client work subpage if we're on a smaller screen
-let is_small_screen = window.getComputedStyle(document.querySelector("body"), "::before").content;
+let is_small_screen = window.getComputedStyle(
+  document.querySelector("body"),
+  "::before"
+).content;
 if (is_small_screen === "none") {
   // A film was possibly clicked
-  document.querySelector(".featuredon")?.addEventListener("click", function (e) {
-    // Find the container element for this film
-    let qFilm = find_parent(e.target, ".film");
+  document
+    .querySelector(".featuredon")
+    ?.addEventListener("click", function (e) {
+      // Find the container element for this film
+      let qFilm = find_parent(e.target, ".film");
 
-    // Nope, no film was clicked
-    if (qFilm === null) {
-      return false;
-    }
-    e.preventDefault();
-    load_page(qFilm);
-  });
+      // Nope, no film was clicked
+      if (qFilm === null) {
+        return false;
+      }
+      e.preventDefault();
+      loadPage(qFilm);
+    });
 }
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -48,7 +53,7 @@ window.addEventListener("DOMContentLoaded", function () {
   if (window.location.hash !== "") {
     film = window.location.hash.match(/#([a-z-]*?)$/i)[1].toLowerCase();
   }
-  on_site_load(film);
+  onSiteLoad(film);
 
   // Set the current year in the footer
   setYearInFooter();
