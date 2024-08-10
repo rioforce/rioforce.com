@@ -1,5 +1,6 @@
 import { Film } from "./class-film.js";
 import { find_parent } from "./find-parent.js";
+import { fetchTextFile, fetchJsonFile } from "./fetch-files.js";
 
 const CONSTANTS = {
   API_KEY: "AIzaSyAnp7CY0EJ0o0elDINC7WmROmJiY2T-Clw",
@@ -37,34 +38,30 @@ function insertFilms(films) {
 
 function generateFilmReel(data) {
   // Get the template for the film thumbnail
-  fetch("templates/film.html")
-    .then(function (r) {
-      return r.text();
-    })
-    .then(function (html) {
-      // Generate a thumbnail for each video
-      let films = [];
-      data.items.forEach(function (v, i) {
-        v = v.snippet;
+  fetchTextFile("templates/film.html").then(function (html) {
+    // Generate a thumbnail for each video
+    let films = [];
+    data.items.forEach(function (v, i) {
+      v = v.snippet;
 
-        // If a maxres thumbnail is not available,
-        // fallback to a medium-sized image (medium because they are letterboxed
-        // and keep the wide-screen aspect ratio)
-        let filmThumbnail = v.thumbnails.maxres || v.thumbnails.medium;
+      // If a maxres thumbnail is not available,
+      // fallback to a medium-sized image (medium because they are letterboxed
+      // and keep the wide-screen aspect ratio)
+      let filmThumbnail = v.thumbnails.maxres || v.thumbnails.medium;
 
-        let film = new Film(
-          i,
-          v.title,
-          v.resourceId.videoId,
-          v.playlistId,
-          filmThumbnail
-        );
-        film.compile(html);
-        films.push(film);
-      });
-
-      insertFilms(films);
+      let film = new Film(
+        i,
+        v.title,
+        v.resourceId.videoId,
+        v.playlistId,
+        filmThumbnail
+      );
+      film.compile(html);
+      films.push(film);
     });
+
+    insertFilms(films);
+  });
 }
 
 function loadVideos(e) {
@@ -91,18 +88,14 @@ function loadVideos(e) {
   qBtn.classList.add("active");
 
   // Load videos for the specified playlist from the YouTube API
-  fetch(
+  fetchJsonFile(
     "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=" +
-    CONSTANTS.NUM_OF_VIDEOS +
-    "&playlistId=" +
-    qBtn.dataset.id +
-    "&fields=items(snippet(playlistId%2CresourceId(playlistId%2CvideoId)%2Cthumbnails%2Ctitle))&key=" +
-    CONSTANTS.API_KEY
-  )
-    .then(function (r) {
-      return r.json();
-    })
-    .then(generateFilmReel);
+      CONSTANTS.NUM_OF_VIDEOS +
+      "&playlistId=" +
+      qBtn.dataset.id +
+      "&fields=items(snippet(playlistId%2CresourceId(playlistId%2CvideoId)%2Cthumbnails%2Ctitle))&key=" +
+      CONSTANTS.API_KEY
+  ).then(generateFilmReel);
 }
 
 // Duplicate this and a thing in the HTML to add another section
@@ -114,5 +107,3 @@ document.querySelector("#btn-tut-bts").addEventListener("click", loadVideos);
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("#btn-shortfilms").click();
 });
-
-
