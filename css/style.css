@@ -545,7 +545,7 @@ video.fullscreen {
 
 .LoCAd {
   border-top: 0.5em solid rgba(255, 255, 255, 0.5);
-  background-image: url(../images/locbg.jpg);
+  background-image: url(../images/LoCBg.jpg);
   background-size: cover;
   /*  background-attachment: fixed;*/
   background-position: center;
