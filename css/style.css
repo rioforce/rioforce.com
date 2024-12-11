@@ -72,11 +72,11 @@ a img {
 /*------IMG-STYLES------*/
 
 .container a img {
-  border: none !important;
+  border: none;
 }
 
 .no-underline {
-  border: none !important;
+  border: none;
 }
 
 .content img {
@@ -262,10 +262,32 @@ video.fullscreen {
 
 /*------PORTFOLIO------*/
 
+/* From https://www.svgbackgrounds.com/elements/svg-shape-dividers/ and https://www.youtube.com/watch?v=HZ6mPgLocAo */
+
+#film-lib-top-transition {
+  background-image: 
+  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" transform="scale(1,-1)" viewBox="0 0 1000 100" fill="%231665C1"><path d="M0 0v99.7C62 69 122.4 48.7 205 66c83.8 17.6 160.5 20.4 240-12 54-22 110-26 173-10a392.2 392.2 0 0 0 222-5c55-17 110.3-36.9 160-27.2V0H0Z" opacity=".5"></path><path d="M0 0v74.7C62 44 122.4 28.7 205 46c83.8 17.6 160.5 25.4 240-7 54-22 110-21 173-5 76.5 19.4 146.5 23.3 222 0 55-17 110.3-31.9 160-22.2V0H0Z"></path></svg>');  linear-gradient(60deg, #cc3f47, #f09f33);
+  background-repeat: no-repeat;
+  background-position: top, bottom, center;
+  padding-top: 10%;
+  position: relative;
+  margin-bottom: -0.1em;
+}
+
+#film-lib-bottom-transition {
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%231665C1"><path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path></svg>');
+	background-repeat: no-repeat;
+	background-position: top, bottom, center;
+	padding-bottom: 10%;
+	position: relative;
+	margin-bottom: 0.9em;
+	margin-top: -3em;
+}
+
 .film-library {
   background-color: rgba(6, 16, 44, 0.92);
   /*  background-color: #eef1f4;*/
-  border-top: 0.5em solid white;
+  /* border-top: 0.5em solid white; */
   /*  padding-bottom: 0.5em;*/
 }
 
@@ -519,72 +541,151 @@ video.fullscreen {
   width: auto;
 }
 
-/*--------BIM AD-------*/
+/*--------LoC AD-------*/
 
-.BiMAd {
+.LoCAd {
   border-top: 0.5em solid rgba(255, 255, 255, 0.5);
-  background-image: url(../images/gem.jpg);
+  background-image: url(../images/locbg.jpg);
   background-size: cover;
   /*  background-attachment: fixed;*/
   background-position: center;
-  height: 30em;
-  /*
-  padding-left:10em;
-  padding-right:10em;
-*/
-  display: flex;
-  align-items: center;
+  background-attachment: fixed;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-.BiMAd img {
-  margin-left: auto;
+#LoCHeader {
+  font-family: Cinzel, 'Times New Roman', Times, serif;
+  font-size: 5em;
+  color: white;
+  font-weight: 700;
+  text-shadow: 1px 1px 50px rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-bottom: 0em;
 }
 
-.BiMAd-p {
-  width: 40%;
-  color: black;
-  margin-right: auto;
-  /*  text-shadow: 0 0 10px rgba(0, 0, 0, 0.42);*/
+#LoCSubHeader {
+  font-size: 1.5em;
+  font-family: Cinzel, 'Times New Roman', Times, serif;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.8);
+  padding-top: 0;
+  margin-top: 0em;
 }
 
-.BiMAd h2 {
+#LoCGallery {
+	display: flex;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.LoCAd img {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.LoCGalleryImg {
+  padding: 0.5em;
+}
+
+#LoCGallery #slightly-bigger {
+  width: 60%;
+}
+
+#LoCContentWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#LoCHeroImg {
+  width: 35%;
+  margin: 0;
+  margin-top: -3em;
+}
+
+.LoCAd-p {
+  width: 50%;
+  color: white;
+  display: inline-block;
+  text-shadow: 1px 1px 30px rgba(255, 255, 255, 0.8);
+
+}
+
+.LoCAd h2 {
   /*  float: right;*/
   font-size: 2em;
   font-weight: 700;
 }
 
-.BiMAd h2 a {
+.LoCAd h2 a {
   color: #242e2e;
   border-bottom: 0.1em solid #191f1f;
 }
 
-.BiMAd h2 a:hover {
-  border-bottom: 0.1em solid rgba(25, 31, 31, 0);
-  color: rgba(25, 31, 31, 0.69);
+.LoCAd button a:hover {
+    color: rgba(221, 221, 0, 0.69);
+    cursor: pointer;
+}
+
+.LoCAd button {
+  background-color: #808026;
+  font-size: 1.5em;
+  font-weight: 700;
+  border-style: none;
+  border-radius: 0.3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+}
+
+.LoCAd button a {
+color: white;
+font-family: Cinzel, 'Times New Roman', Times, serif;
+}
+
+#NativityThumb {
+  cursor: pointer;
+}
+
+#Nativity-Thumb :hover {
+  opacity: 80%;
 }
 
 @media screen and (max-width: 900px) {
-  .BiMAd {
+  .LoCAd {
     display: block;
     height: auto;
   }
 
-  .BiMAd img {
+  .LoCAd img {
     display: block;
     margin-right: auto;
     margin-left: auto;
     width: 16em;
   }
 
-  .BiMAd-p {
+  .LoCAd-p {
     margin-left: auto;
     width: 75%;
     text-align: justify;
   }
 
-  .BiMAd-p h2 {
+  .LoCAd-p h2 {
     display: inline-block;
     font-size: 1.5em;
   }

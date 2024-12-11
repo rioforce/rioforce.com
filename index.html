@@ -9,7 +9,7 @@
   <link rel="shortcut icon" type="image/png" href="favicon.png">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;700&family=Cinzel:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,8 +23,9 @@
 
         <ul class="nav-pages">
           <li><a href="#home">Home</a></li>
+          <li><a href="#lifeofchrist">Life of the Christ</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Videos</a></li>
           <li>
             <a title="YouTube" href="https://www.youtube.com/c/rioforce" rel="noopener noreferrer" target="_blank">
               <img  width="30" height="27" src="/images/youtube.svg">
@@ -51,39 +52,62 @@
     </header>
 
     <main class="content">
-      <span id="about"></span>
 
       <div class="upper-about-reel-banner">
         <a href="https://www.youtube.com/watch?v=j1Oon8n2h5M" target="_blank">Check out my animation reel!</a>
       </div>
 
-      <div class="contact">
-        <h1 class="large-headers">About</h1>
-        <img id="lil-rio" src="images/lil-rio.png" alt="rioforce photo">
-        <div id="about">
-          <p>My name is <span class="emphasis">Benjamin Ely</span>, but I'm called rioforce on the internet.
-            <br><br>I've been an animator for over <span class="emphasis" id="years-since">13</span> years, and still
-            enjoy every moment
-            at the animation desk. Telling stories fuels me, and animation just seems like the perfect medium to do
-            that. I specialize in stop-motion animation, working with companies such as <span
-              class="emphasis">Stikbot</span> and <span class="emphasis">Jazwares</span>, but am also skilled in CGI
-            animation and video editing.
-            <br><br>
-            Inside the realm of stop-motion, I primarily enjoy animating with LEGO brand toys for personal projects.
-            This is called <span class="emphasis">brickfilming</span>. However, I'm always experimenting in new mediums
-            and with new products in my drive to always make something better.
-            <br><br>
-            On my YouTube channel, I upload my stop-motion animations as well as tutorials and teaching videos to help
-            others learn about the craft. Please check some of them out below!
-          </p>
-        </div>
+      <span id="lifeofchrist"></span>
 
-        <h2 id="quote"><em>"Whatever you do, do all to the glory of God."<br>~ 1 Corinthians 10:31b</em></h2>
+      <div class="LoCAd">
+        <h1 id="LoCHeader">Life of the Christ</h1>
+        <h2 id="LoCSubHeader">Currently in production</h2>
+        <div id="LoCGallery">
+          <img class="LoCGalleryImg" src="images/loc1.jpg" width="400px">
+          <img id="slightly-bigger" class="LoCGalleryImg" src="images/loc3.jpg" width="400px">
+          <img class="LoCGalleryImg" src="images/loc2.jpg" width="400px">
+       </div>
+        <div id="LoCContentWrapper">
+           <img id="LoCHeroImg" src="images/LoCJesusPray2.png" width="500px">
+            <div class="LoCAd-p">
+              <p><em>Life of the Christ</em> is an ongoing stop-motion animated series of short films focusing on the life, death, and resurrection of Jesus Christ with a focus on his ministry, relationships, and humanity.</p>
+              <p>This project will be compiled into a feature length film once completed, but in the meantime you can watch episodes as I release them on my YouTube channel. The first episode, <em>The Nativity of the Christ</em> is live now and can be watched on YouTube.</p>
+              <a id="Nativity-Thumb" href="https://www.youtube.com/watch?v=yeVHg6TuJQg" target="_blank"><img src="images/nativity-play.jpg" width="300px"></a>
+              <p>If you're interested in supporting this project or learning more, please follow the link below for the full story. Thank you for taking the time to check it out!</p>
+            <!-- <button><a href="/lifeofchrist">Learn More about <em>Life of the Christ</em></a></button> -->
+            <button><a href="https://www.patreon.com/rioforce">Support the Project</a></button>
+            </div>
+        </div>
+        <div id="film-lib-top-transition"></div>
       </div>
 
       <span id="portfolio"></span>
 
+      <div class="film-library">
+        <div class="btn-row" id="video-lib-buttons">
+          <div class="btn btn-playlist-toggle" id="btn-client" data-id="PLtkOA2qyrbHLzqgaTHO5b3Q-470XT8ZTy">
+            <h3 class="sliding-middle-out title "><i class="fas fa-briefcase"></i> Client Work</h3>
+          </div>
+
+          <div class="btn btn-playlist-toggle" id="btn-shortfilms" data-id="PLtkOA2qyrbHI0h4gHzOUP3DssE4cue4D3">
+            <h3 class="sliding-middle-out title"><i class="fas fa-film"></i> Short Films</h3>
+          </div>
+
+          <!-- Duplicate this and a thing in the Javascript to add another section -->
+          <div class="btn btn-playlist-toggle" id="btn-tut-bts" data-id="PLtkOA2qyrbHLfvrI1dAtwcmL4FH5-EJFs">
+            <h3 class="sliding-middle-out title"><i class="fas fa-graduation-cap"></i> Tutorials</h3>
+          </div>
+        </div>
+
+        <div class="film-row-wrapper"></div>
+        <div class="lower-film-library-banner">
+          <a href="https://www.youtube.com/rioforce" target="_blank">See more on YouTube</a>
+        </div>
+      </div>
+
+      <span id="clients"></span>
       <div class="featuredon">
+        <div id="film-lib-bottom-transition"></div>
         <h1 class="clients-header">Client Highlights</h1>
         <h2>Click logos for more information</h2>
 
@@ -159,36 +183,29 @@
         </div>
       </div>
 
-      <span id="portfolio"></span>
-
-      <div class="film-library">
-        <div class="btn-row" id="video-lib-buttons">
-          <div class="btn btn-playlist-toggle" id="btn-client" data-id="PLtkOA2qyrbHLzqgaTHO5b3Q-470XT8ZTy">
-            <h3 class="sliding-middle-out title "><i class="fas fa-briefcase"></i> Client Work</h3>
-          </div>
-
-          <div class="btn btn-playlist-toggle" id="btn-shortfilms" data-id="PLtkOA2qyrbHI0h4gHzOUP3DssE4cue4D3">
-            <h3 class="sliding-middle-out title"><i class="fas fa-film"></i> Short Films</h3>
-          </div>
-
-          <!-- Duplicate this and a thing in the Javascript to add another section -->
-          <div class="btn btn-playlist-toggle" id="btn-tut-bts" data-id="PLtkOA2qyrbHLfvrI1dAtwcmL4FH5-EJFs">
-            <h3 class="sliding-middle-out title"><i class="fas fa-graduation-cap"></i> Tutorials</h3>
-          </div>
+      <div class="contact">
+        <h1 class="large-headers">About</h1>
+        <img id="lil-rio" src="images/lil-rio.png" alt="rioforce photo">
+        <div id="about">
+          <p>My name is <span class="emphasis">Benjamin Ely</span>, but I'm called rioforce on the internet.
+            <br><br>I've been an animator for over <span class="emphasis" id="years-since">13</span> years, and still
+            enjoy every moment
+            at the animation desk. Telling stories fuels me, and animation just seems like the perfect medium to do
+            that. I specialize in stop-motion animation, working with companies such as <span
+              class="emphasis">Stikbot</span> and <span class="emphasis">Jazwares</span>, but am also skilled in CGI
+            animation and video editing.
+            <br><br>
+            Inside the realm of stop-motion, I primarily enjoy animating with LEGO brand toys for personal projects.
+            This is called <span class="emphasis">brickfilming</span>. However, I'm always experimenting in new mediums
+            and with new products in my drive to always make something better.
+            <br><br>
+            On my YouTube channel, I upload my stop-motion animations as well as tutorials and teaching videos to help
+            others learn about the craft. Please check some of them out below!
+          </p>
         </div>
 
-        <div class="film-row-wrapper"></div>
-        <div class="lower-film-library-banner">
-          <a href="https://www.youtube.com/rioforce" target="_blank">See more on YouTube</a>
-        </div>
+        <h2 id="quote"><em>"Whatever you do, do all to the glory of God."<br>~ 1 Corinthians 10:31b</em></h2>
       </div>
-
-      <!-- <div class="BiMAd">
-        <img src="images/Bricks%20in%20Motion%20Logo%20New%20Black%20Letters.png" width="400px">
-        <div class="BiMAd-p">
-          <p>Along with making my own brickfilms, I am administrator of Bricks in Motion, a website centered around the art of brickfilming. Here, we have a wonderful community where you can learn about the art of LEGO animation, show off your films, learn new techniques, get feedback, or just have fun! If you're interested in brickfilming or joining a fun community of animators, please visit Bricks in Motion.</p>
-          <h2><a href="https://BricksInMotion.com">BricksInMotion.com</a></h2></div>
-      </div> -->
 
       <!--      <div class="social-pretenses"></div>-->
     </main>
