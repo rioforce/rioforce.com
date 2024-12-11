@@ -1,4 +1,6 @@
-export function update_page_title(title) {
+import { fetchTextFile } from "./fetch-files.js";
+
+export function updatePageTitle(title) {
   let pipe_index = document.title.indexOf("|") + 1;
 
   // We want to remove the extra text added earlier
@@ -18,8 +20,8 @@ export function update_page_title(title) {
   return true;
 }
 
-function remove_film_detail() {
-  update_page_title();
+function removeFilmDetail() {
+  updatePageTitle();
   function _end() {
     this.removeEventListener("transitionend", _end);
     this.parentElement.removeChild(this);
@@ -30,7 +32,7 @@ function remove_film_detail() {
   qFilmDetail.classList.remove("visible");
 }
 
-function add_film_detail(qFilmRow, film, name, page) {
+function addFilmDetail(qFilmRow, film, name, page) {
   // Insert the container for the film details
   qFilmRow.insertAdjacentHTML(
     "afterend",
@@ -44,10 +46,10 @@ function add_film_detail(qFilmRow, film, name, page) {
 
   // Update browser elements
   window.location.hash = film;
-  update_page_title(name);
+  updatePageTitle(name);
 }
 
-export function load_page(qFilm) {
+export function loadPage(qFilm) {
   // Extract the file name for this film and the row it is on
   let qFilmRow = qFilm.parentElement;
   let filmPage = qFilm.id;
@@ -56,7 +58,7 @@ export function load_page(qFilm) {
   // If a film detail is already on the page, we need to remove it
   let qOldFilmDetail = document.querySelector(".film-detail");
   if (qOldFilmDetail) {
-    remove_film_detail();
+    removeFilmDetail();
 
     // If the same film visible was clicked, we only remove it
     // and not do any more loading
@@ -66,14 +68,12 @@ export function load_page(qFilm) {
   }
 
   // Fetch the film's page
-  fetch(`../pages/${filmPage}.html`)
-    .then((r) => r.text())
-    .then((data) => {
-      add_film_detail(qFilmRow, filmPage, filmName, data);
-    });
+  fetchTextFile(`../pages/${filmPage}.html`).then((data) => {
+    addFilmDetail(qFilmRow, filmPage, filmName, data);
+  });
 }
 
-export function on_site_load(filmPage) {
+export function onSiteLoad(filmPage) {
   // We do not have film to load, abort
   if (filmPage === null) {
     return false;
@@ -86,5 +86,5 @@ export function on_site_load(filmPage) {
   }
 
   // We have a film, load it
-  load_page(qFilm);
+  loadPage(qFilm);
 }
