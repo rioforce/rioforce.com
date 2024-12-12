@@ -3,7 +3,7 @@ import { find_parent } from "./find-parent.js";
 import { fetchTextFile, fetchJsonFile } from "./fetch-files.js";
 
 const CONSTANTS = {
-  API_KEY: "AIzaSyAnp7CY0EJ0o0elDINC7WmROmJiY2T-Clw",
+  API_KEY: "AIzaSyDR0J5EjaysP0sSpLl2jqxBk4vLDR7pPgM",
   FILMS_IN_ROW: 3,
   NUM_OF_VIDEOS: document.documentElement.clientWidth > 500 ? 9 : 4, //CHANGE THIS TO ADD ROW OTHER ETC
 };
