@@ -37,6 +37,10 @@ function insertFilms(films) {
 }
 
 function generateFilmReel(data) {
+  if (!data.items || data.items.length === 0) {
+    console.error("No items found in the API response. At least, that's what Chat GPT thinks.");
+    return;
+  }
   // Get the template for the film thumbnail
   fetchTextFile("templates/film.html").then(function (html) {
     // Generate a thumbnail for each video
@@ -62,6 +66,7 @@ function generateFilmReel(data) {
 
     insertFilms(films);
   });
+  
 }
 
 function loadVideos(e) {
@@ -96,6 +101,9 @@ function loadVideos(e) {
       "&fields=items(snippet(playlistId%2CresourceId(playlistId%2CvideoId)%2Cthumbnails%2Ctitle))&key=" +
       CONSTANTS.API_KEY
   ).then(generateFilmReel);
+
+  console.log("Fetching from URL:", url); // Inside fetchJsonFile or before calling it
+
 }
 
 // Duplicate this and a thing in the HTML to add another section
