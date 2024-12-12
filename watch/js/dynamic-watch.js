@@ -30,7 +30,7 @@ function loadYouTubeVideo(youtubeLink) {
 
   // Embed YouTube video
   const videoContainer = document.querySelector("#film-link");
-  videoContainer.innerHTML = `<iframe width="1240" height="720" src="${fullEmbedUrl}" frameborder="0" allowfullscreen></iframe>`;
+  videoContainer.innerHTML = `<iframe width="851" height="479" src="${fullEmbedUrl}" frameborder="0" allowfullscreen></iframe>`;
 }
 
 function loadProfileInfo(profile) {

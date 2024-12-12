@@ -15,25 +15,10 @@
 
 <body id="home">
   <div class="container">
-    <nav>
-      <div>
-        <a id="rio-logo" href="https://rioforce.com">
-          <img id="rioforce-logo-nav" alt="rioforce" width="50" height="50" src="images/Rioforce-logo-round-white.png">
-        </a>
-
-        <ul class="nav-pages">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#lifeofchrist">Life of the Christ</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li>
-            <a title="YouTube" href="https://www.youtube.com/c/rioforce" rel="noopener noreferrer" target="_blank">
-              <img  width="30" height="27" src="/images/youtube.svg">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="content">
+    <nav id="site-nav">
+      <a href="/">rioforce</a>
+  </nav>
 
     <header id="header-home">
       <div id="header-content-image">
@@ -209,19 +194,14 @@
 
       <!--      <div class="social-pretenses"></div>-->
     </main>
-
-    <footer>
-      <div id="submebutton">
-        <div class="g-ytsubscribe" data-channel="LukeActionFilms" data-layout="full" data-theme="default"
-          data-count="default"></div>
-      </div>
-      <h3 id="credit">&copy; <span id="current-year"></span> Benjamin Ely</h3>
-    </footer>
+  </div>
+  <footer id="site-footer"></footer>
   </div>
 
   <script src="https://apis.google.com/js/platform.js"></script>
 
   <script type="module" src="js/featured-films.js"></script>
+  <script type="module" src="js/injection.js"></script>
   <script type="module" src="js/index.js"></script>
 </body>
 

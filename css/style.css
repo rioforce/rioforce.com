@@ -818,17 +818,25 @@ font-family: Cinzel, 'Times New Roman', Times, serif;
 
 #watch-page .content {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 5em;
 }
 
 #watch-main {
-  margin-top: 6em;
-  margin-left: 6em;
-  width: 67%;
+  width: 78%;
   min-width: 58%;
+  margin-right: 1em;
 }
 
 .watch-player {
   margin-top: 1em;
+}
+
+#film-link {
+  text-align: center;
+  overflow: hidden;
 }
 
 #film-date {
@@ -864,8 +872,6 @@ font-family: Cinzel, 'Times New Roman', Times, serif;
 }
 
 #article-description {
-  width: 85%;
-  margin-left: 4em;
 }
 
 .watch-comments {
@@ -874,10 +880,8 @@ font-family: Cinzel, 'Times New Roman', Times, serif;
 }
 
 #watch-recs {
-  margin-top: 5em;
-  margin-left: 2em;
-  margin-right: 6em;
-  width: 24em;
+	margin-top: -1em;
+  width: 30%;
 }
 
 #watch-next {
@@ -888,6 +892,7 @@ font-family: Cinzel, 'Times New Roman', Times, serif;
 .rec-vid {
   display: flex;
   padding-top: 1em;
+  font-size: 14px;
 }
 
 .rec-vid a {
