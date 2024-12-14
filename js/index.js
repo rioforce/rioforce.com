@@ -1,6 +1,5 @@
 import { loadPage, onSiteLoad } from "./client-work.js";
 import { find_parent } from "./find-parent.js";
-import { setYearInFooter } from "./footer.js";
 
 function years_since(year, month, day) {
   // Get the current date
@@ -54,9 +53,6 @@ window.addEventListener("DOMContentLoaded", function () {
     film = window.location.hash.match(/#([a-z-]*?)$/i)[1].toLowerCase();
   }
   onSiteLoad(film);
-
-  // Set the current year in the footer
-  setYearInFooter();
 
   // How many years have I been brickfilming?
   const q_years_since = document.querySelector("#years-since");
