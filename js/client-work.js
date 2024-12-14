@@ -5,7 +5,7 @@ export function updatePageTitle(title) {
 
   // We want to remove the extra text added earlier
   if (!title) {
-    document.title = document.title.substr(pipe_index);
+    document.title = document.title.substring(pipe_index);
     return true;
   }
 
@@ -16,7 +16,7 @@ export function updatePageTitle(title) {
   }
 
   // A title has already been added, replace it with the new one
-  document.title = `${title} | ${document.title.substr(pipe_index)}`;
+  document.title = `${title} | ${document.title.substring(pipe_index)}`;
   return true;
 }
 
