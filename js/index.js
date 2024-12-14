@@ -60,8 +60,8 @@ window.addEventListener("DOMContentLoaded", function () {
     q_years_since.textContent = years_since(2007, 12, 10);
   }
 
-  // Automatically play hero video background on tablet-sized and larger screens
-  if (document.documentElement.clientWidth >= 768) {
-    document.querySelector("video.fullscreen").setAttribute("autoplay", "");
+  // Don't automatically play hero video background on screens smaller than tablets
+  if (document.documentElement.clientWidth < 768) {
+    document.querySelector("video.fullscreen")?.removeAttribute("autoplay");
   }
 });
