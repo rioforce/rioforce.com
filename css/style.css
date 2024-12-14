@@ -547,7 +547,6 @@ video.fullscreen {
   border-top: 0.5em solid rgba(255, 255, 255, 0.5);
   background-image: url(../images/LoCBg.jpg);
   background-size: cover;
-  /*  background-attachment: fixed;*/
   background-position: center;
   background-attachment: fixed;
   height: auto;
@@ -667,9 +666,36 @@ font-family: Cinzel, 'Times New Roman', Times, serif;
 }
 
 @media screen and (max-width: 900px) {
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    margin: 0.5rem;
+  }
+
+  #rio-logo {
+    margin: 1.5rem;
+  }
+
+  #LoCHeader {
+    font-size: 3em;
+  }
+
+  #LoCHeroImg {
+    display: none;
+  }
+
+    
   .LoCAd {
     display: block;
     height: auto;
+    background-attachment: revert;
+  }
+
+  #LoCGallery {
+    display: inline;
   }
 
   .LoCAd img {
@@ -679,10 +705,12 @@ font-family: Cinzel, 'Times New Roman', Times, serif;
     width: 16em;
   }
 
+
   .LoCAd-p {
     margin-left: auto;
-    width: 75%;
+    width: 100%;
     text-align: justify;
+    margin-right: auto;
   }
 
   .LoCAd-p h2 {
