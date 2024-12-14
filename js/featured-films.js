@@ -5,7 +5,7 @@ import { fetchTextFile, fetchJsonFile } from "./fetch-files.js";
 const CONSTANTS = {
   API_KEY: "AIzaSyBLq6JH9VpKMYi2AUMwQH-ZUTFadoBDmeQ",
   FILMS_IN_ROW: 3,
-  NUM_OF_VIDEOS: document.documentElement.clientWidth > 500 ? 9 : 4, //CHANGE THIS TO ADD ROW OTHER ETC
+  NUM_OF_VIDEOS: document.documentElement.clientWidth > 500 ? 9 : 4, // CHANGE THIS TO ADD ROW OTHER ETC
 };
 
 function _isSame(oldArea, newArea) {
@@ -38,7 +38,9 @@ function insertFilms(films) {
 
 function generateFilmReel(data) {
   if (!data.items || data.items.length === 0) {
-    console.error("No items found in the API response. At least, that's what Chat GPT thinks.");
+    console.error(
+      "No items found in the API response. At least, that's what ChatGPT thinks."
+    );
     return;
   }
   // Get the template for the film thumbnail
@@ -66,7 +68,6 @@ function generateFilmReel(data) {
 
     insertFilms(films);
   });
-  
 }
 
 function loadVideos(e) {
@@ -101,9 +102,6 @@ function loadVideos(e) {
       "&fields=items(snippet(playlistId%2CresourceId(playlistId%2CvideoId)%2Cthumbnails%2Ctitle))&key=" +
       CONSTANTS.API_KEY
   ).then(generateFilmReel);
-
-  console.log("Fetching from URL:", url); // Inside fetchJsonFile or before calling it
-
 }
 
 // Duplicate this and a thing in the HTML to add another section
