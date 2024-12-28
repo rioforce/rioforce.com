@@ -1,1 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 200"
+   fill="#FFFFF"
+   stroke="#FFFFF"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="chevron-down-solid.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   width="512"
+   height="200"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="254.91525"
+     inkscape:cy="256"
+     inkscape:window-width="1312"
+     inkscape:window-height="449"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1"
+     showguides="false" />
+  <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <path
+     d="m 407.09293,131.48295 c 2.70608,2.95229 7.10076,2.95229 9.80684,0 l 41.56545,-45.34696 c 2.70608,-2.952273 2.70608,-7.74677 0,-10.699053 -2.70608,-2.952274 -7.10078,-2.952274 -9.80686,0 L 411.98552,115.4462 375.31267,75.460561 c -2.70607,-2.952274 -7.10076,-2.952274 -9.80684,0 -2.70608,2.952273 -2.70608,7.74677 0,10.699043 l 41.56544,45.346966 z"
+     id="path1"
+     style="fill:#ffffff;stroke-width:0.22612;fill-opacity:0.70338982" />
+  <text
+     xml:space="preserve"
+     style="font-size:95.0885px;fill:#ffffff;stroke:none;stroke-width:7.924;fill-opacity:0.70338982"
+     x="62.934967"
+     y="125.56622"
+     id="text1"
+     transform="scale(0.97296368,1.0277876)"><tspan
+       sodipodi:role="line"
+       id="tspan1"
+       x="62.934967"
+       y="125.56622"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#ffffff;stroke:none;stroke-width:7.924;fill-opacity:0.70338982">More</tspan></text>
+</svg>
