@@ -603,7 +603,7 @@ font-size: 1em;
 
 #LoCContentWrapper {
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: center;
 	width: 80%;
 	margin-left: auto;
@@ -668,6 +668,22 @@ font-family: Cinzel, 'Times New Roman', Times, serif;
 
 #Nativity-Thumb :hover {
   opacity: 80%;
+}
+
+#LoCDonate {
+  width: 33%;
+}
+
+#LoCDonate a {
+  border-bottom: #fff 1px solid;
+}
+
+#LoCDonate p {
+	color: white;
+	font-size: .8em;
+	text-align: center;
+	margin-left: 4em;
+	margin-right: 4em;
 }
 
 @media screen and (max-width: 900px) {
