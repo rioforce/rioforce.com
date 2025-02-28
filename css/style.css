@@ -563,7 +563,7 @@ font-size: 1em;
   font-size: 5em;
   color: white;
   font-weight: 700;
-  text-shadow: 1px 1px 50px rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 50px rgba(0, 0, 0, 0.8);
   text-align: center;
   margin-bottom: 0em;
   margin-top: 0.2em;
@@ -575,7 +575,7 @@ font-size: 1em;
   font-weight: 300;
   color: white;
   text-align: center;
-  text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
   padding-top: 0;
   margin-top: 0em;
 }
@@ -620,7 +620,7 @@ font-size: 1em;
   width: 50%;
   color: white;
   display: inline-block;
-  text-shadow: 1px 1px 30px rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 30px rgba(0, 0, 0, 1);
 
 }
 
