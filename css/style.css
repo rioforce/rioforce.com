@@ -708,6 +708,13 @@ font-family: Cinzel, 'Times New Roman', Times, serif;
     display: none;
   }
 
+  #LoCContentWrapper {
+    display: block;
+  }
+
+  #LoCDonate {
+    width: 100%;
+  }
 
   .LoCAd {
     display: block;
